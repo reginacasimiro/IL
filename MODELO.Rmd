@@ -1,0 +1,207 @@
+---
+title: "MODELO"
+author: "RC"
+date: "2023-06-07"
+output: html_document
+---
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Epanet pesos de consumo
+
+
+```{r}
+install.packages("readxl")
+library("readxl")
+install.packages("data.table")
+library(data.table)
+
+```
+
+## Input data
+
+Consumos de clientes e espacos verdes
+
+```{r}
+clientes<- read_excel("C:/Users/regin/Desktop/ShareFiles/MODELO/Pesos_Parciais_ZMC_12.06.xlsx", sheet="Clientes")
+clientes<-clientes[,c("Idcontador", "Mes", "M3")]
+clientes<-as.data.frame(clientes)
+
+ZMC<-read_excel("C:/Users/regin/Desktop/ShareFiles/QGIS/ZMC_idcont_areas10.05.2023.xlsx", sheet=1)
+clientes_ZMC<-merge(clientes, ZMC, by= "Idcontador", all.x = TRUE)
+clientes_ZMC<-as.data.table(clientes_ZMC)
+clientes_ZMC<-clientes_ZMC[,sumMonth:=sum(M3, na.rm = TRUE), by=c("Mes","CodigoLocal")]
+clientes_ZMC<-clientes_ZMC[, c("CodigoLocal", "Mes", "sumMonth","ZMC")]
+clientes_ZMC<-clientes_ZMC[!duplicated(clientes_ZMC)]
+
+verdes<- read_excel("C:/Users/regin/Desktop/ShareFiles/MODELO/Pesos_Parciais_ZMC_12.06.xlsx", sheet=2)
+verdes<-verdes[,c("Idcontador", "Mes", "M3")]
+verdes<-as.data.frame(verdes)
+ZMC_rega<-read_excel("C:/Users/regin/Desktop/ShareFiles/QGIS/ZMC_REGA.xlsx", sheet=1)
+verdes_ZMC<-merge(verdes, ZMC_rega, by.x= "Idcontador", by.y="IDLocaliza", all.x = TRUE)
+verdes_ZMC<-as.data.table(verdes_ZMC)
+verdes_ZMC<-verdes_ZMC[,sumMonth:=sum(M3, na.rm = TRUE), by=c("Mes","Idcontador")]
+verdes_ZMC<-verdes_ZMC[, c("Idcontador", "Mes", "M3","ZMC")]
+
+```
+## pesos
+```{r}
+consumos<- read.csv("C:/Users/regin/Desktop/ShareFiles/MODELO/consumo22_ZMC.csv", header=TRUE, sep= ";")
+consumos<-as.data.table(consumos)
+consumos<-consumos[,TotalZMCMes:=sum(consumo, na.rm = TRUE), by=c("Mes","ZMC")]
+consumos<-consumos[, PesoMes:=consumo/TotalZMCMes, by=c("CodigoLocal", "ZMC","Mes")]
+# verificar
+consumos<-consumos[, check:=sum(PesoMes), by= "ZMC"]
+consumos$check<-NULL
+# soma verão e inverno
+consumos<-consumos[,verao:=sum(consumo[Mes> 3 & Mes <= 9], na.rm=TRUE), by="CodigoLocal"]
+consumos<-consumos[,inverno:=sum(consumo[Mes %in% c(3,2,1,12,11,10)], na.rm=TRUE), by="CodigoLocal"]
+consumos<-consumos[,consumoTotal:=sum(consumo, na.rm=TRUE), by="CodigoLocal"]
+
+sub<-consumos[, .SD[1:1], "CodigoLocal"]
+sub<-as.data.table(sub)
+sub<-sub[,pesoVerao:= verao/sum(verao), by="ZMC"]
+sub<-sub[,pesoInverno:= inverno/sum(inverno), by="ZMC"]
+
+#elevation
+elevation_rega<-read_excel("C:/Users/regin/Desktop/ShareFiles/MODELO/elevation_rega.xlsx")
+elevation_ptosconsumo<-read_excel("C:/Users/regin/Desktop/ShareFiles/MODELO/ptosConsumo_elevation.xlsx")
+elevation<-rbind(elevation_ptosconsumo,elevation_rega)
+
+epanet<-merge(elevation, sub, by="CodigoLocal", all.y = TRUE)
+epanet<-epanet[, c("CodigoLocal","elevation", "pesoVerao", "ZMC")]
+write.csv(epanet, "epanet_consumos.csv")
+
+```
+
+########################################
+not used!!!!
+
+##
+turn row values into column names and count its assigned values
+```{r}
+clientes_ZMC$Mes<-as.factor(clientes_ZMC$Mes)
+clientes_ZMC<-clientes_ZMC[order(Mes),]
+clientes_reshape<-reshape(clientes_ZMC,  idvar = c("CodigoLocal", "ZMC"), direction = "wide",timevar = "Mes")
+
+write.csv(clientes_reshape, "clientes_reshape.csv")
+
+verdes_ZMC$Mes<-as.factor(verdes_ZMC$Mes)
+verdes_ZMC<-verdes_ZMC[order(Mes),]
+verdes_reshape<-reshape(verdes_ZMC,  idvar = c("Idcontador", "ZMC"), direction = "wide",timevar = "Mes")
+
+write.csv(verdes_reshape, "verdes_reshape.csv")
+
+```
+
+## Reshape
+
+```{r}
+Reshape<- read_excel("C:/Users/regin/Desktop/ShareFiles/MODELO/Pesos_Parciais_ZMC_12.06.xlsx", sheet="Consumo22_reshape")
+reshape<-as.data.table(Reshape)
+
+
+```
+###############################
+#ALTERAR JUNCTIONS FROM QGISRED
+###############################
+```{r}
+df<-read_excel("C:/Users/regin/Desktop/ShareFiles/MODELO/Junctions_nearest_PtConsumo&Rega_ZMC7_8_9.xlsx")
+
+library(data.table)
+##library(stringi)
+
+DT <- data.table(df)
+DT<-DT[,BaseDem:=sum(pesoVerao, na.rm=TRUE), by=c("Id","ZMC")]
+DT<-DT[, Codigos:=paste0(CodigoLoca, collapse = " "), by=c("Id", "ZMC")]
+
+write.csv(DT, "Junctions_com_consumo.csv")
+
+# acrescentar nós sem consumo e existentes na Junctions proveniente do qgisred
+Junctions_qgisred<-read.csv("C:/Users/regin/Desktop/ShareFiles/MODELO/Junctions_qgisred.csv", header=TRUE, sep = ",")
+
+diff<-setdiff(Junctions_qgisred$Id,DT$Id)
+diff<-as.data.frame(diff)
+write.csv(diff, "Junctions_sem_consumo.csv")
+
+# acrecentar (em excel) diff ao Epanet_Junctions e criar/limpar em excelficando:ID, Elev, Demand, Pattern, ZMC e codigos Idcontador
+dfepanet<-read_excel("C:/Users/regin/Desktop/ShareFiles/MODELO/Junctions_com&sem_consumo.xlsx", sheet=1)
+
+dfepanet<-dfepanet[!duplicated(dfepanet),]
+nrow(dfepanet)
+write.csv(dfepanet, "dfepanet.csv")
+
+
+```
+################
+# Reservoir hourly pattern 
+###############
+```{r}
+reservoir<- read.csv("C:/Users/regin/Desktop/ShareFiles/MODELO/ZMC9_modelo/datalogger_PRVDL028/Volume Gravítica.csv", header = TRUE, sep = ";")
+
+library(lubridate)
+reservoir$data<-ceiling_date(dmy_hm(reservoir$Data.Hora), "hour")
+reservoir$hour<-format(as.POSIXct(reservoir$data,format="%d/%m/%Y %H:%M"),"%H")
+reservoir$day<-format(as.POSIXct(reservoir$data,format="%d/%m/%Y %H:%M"),"%d")
+
+reservoir<-as.data.table(reservoir)
+reservoir<-reservoir[,VolHour:=sum(volume, na.rm = TRUE), by=c("hour","day")]
+reservoir<-reservoir[,Volepanet:=median(VolHour, na.rm = TRUE), by="hour"]
+
+reservoir_epanet<-reservoir[, c("hour","Volepanet")]
+reservoir_epanet<-reservoir_epanet[!duplicated(reservoir_epanet)]
+reservoir_epanet<-reservoir_epanet[order(reservoir_epanet$hour),]
+reservoir_epanet$epanetHour<-round(reservoir_epanet$Volepanet,0)
+write.csv(reservoir_epanet, "reservoir_epanet.csv")
+
+```
+
+
+```{r}
+datalogger<- read.csv("C:/Users/regin/Desktop/ShareFiles/MODELO/ZMC9_modelo/datalogger_PRVDL028/PRVDL028 - PRESSAO GRAVITICA.csv", header = TRUE, sep = ";")
+
+library(lubridate)
+datalogger$data<-ceiling_date(dmy_hm(datalogger$Time), "hour")
+datalogger$hour<-format(as.POSIXct(datalogger$data,format="%d/%m/%Y %H:%M"),"%H")
+datalogger$day<-format(as.POSIXct(datalogger$data,format="%d/%m/%Y %H:%M"),"%d")
+
+datalogger<-as.data.table(datalogger)
+datalogger<-datalogger[,PressureHour:=mean(Pressure, na.rm = TRUE), by=c("hour","day")]
+datalogger<-datalogger[,Pressurepanet:=median(PressureHour, na.rm = TRUE), by="hour"]
+
+datalogger_epanet<-datalogger[, c("hour","Pressurepanet")]
+datalogger_epanet<-datalogger_epanet[!duplicated(datalogger_epanet)]
+datalogger_epanet<-datalogger_epanet[order(datalogger_epanet$hour),]
+datalogger_epanet$epanetHour<-round(datalogger_epanet$Pressurepanet,0)
+write.csv(datalogger_epanet, "datalogger_epanet.csv")
+
+```
+
+Pressao media durante hora num dia especifico (01/09) & sum of volume during hour
+
+```{r}
+datalogger$time<-as.POSIXct(datalogger$Time, format= "%d/%m/%Y %H:%M", tz = "Europe/London")
+reservoir$time<-as.POSIXct(reservoir$Data.Hora, format= "%d/%m/%Y %H:%M", tz = "Europe/London")
+datalogger0109<-datalogger[datalogger$time >= as.POSIXct("2023-09-01 00:00:00", format = "%Y-%m-%d %H:%M:%S", tz = "Europe/London") & datalogger$time < as.POSIXct("2023-09-02 00:00:00", format = "%Y-%m-%d %H:%M:%S", tz = "Europe/London"),]
+reservoir0109<-reservoir[reservoir$time >= as.POSIXct("2023-09-01 00:00:00", format = "%Y-%m-%d %H:%M:%S", tz = "Europe/London") & reservoir$time < as.POSIXct("2023-09-02 00:00:00", format = "%Y-%m-%d %H:%M:%S", tz = "Europe/London"),]
+
+reservoir0109<-as.data.table(reservoir0109)
+datalogger0109<-as.data.table(datalogger0109)
+
+reservoir0109$hour<-format(as.POSIXct(reservoir0109$Data.Hora,format="%d/%m/%Y %H:%M"),"%H")
+reservoir0109$day<-format(as.POSIXct(reservoir0109$Data.Hora,format="%d/%m/%Y %H:%M"),"%d")
+reservoir0109<-reservoir0109[,VolHour:=sum(volume, na.rm = TRUE), by=c("hour","day")]
+
+datalogger0109$hour<-format(as.POSIXct(datalogger0109$Time,format="%d/%m/%Y %H:%M"),"%H")
+datalogger0109$day<-format(as.POSIXct(datalogger0109$Time,format="%d/%m/%Y %H:%M"),"%d")
+datalogger0109<-datalogger0109[,PressureHour:=mean(Pressure, na.rm = TRUE), by=c("hour","day")]
+
+datalogger_epanet2<-datalogger0109[, c("hour","PressureHour")]
+datalogger_epanet2<-datalogger_epanet2[!duplicated(datalogger_epanet2)]
+
+reservoir_epanet2<-reservoir0109[, c("hour","VolHour")]
+reservoir_epanet2<-reservoir_epanet2[!duplicated(reservoir_epanet2)]
+```
+
