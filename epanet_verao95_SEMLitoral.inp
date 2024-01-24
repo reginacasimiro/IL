@@ -8,707 +8,711 @@ ZMC7                           	29.0      	31.0      	27.0      	27.0      	27.0
 ZMC7                           	31.0      	29.0      	20.0      	14.0      	13.0      	14.0      
 ZMC7                           	12.0      	9.0       	9.0       	14.0      	10.0      	9.0       
 ZMC7                           	8.0       	10.0      	12.0      	16.0      	22.0      	28.0      
+;ID                             	Multipliers
 ZMC8                           	259.0     	278.0     	245.0     	244.0     	239.0     	225.0     
 ZMC8                           	275.0     	265.0     	176.0     	125.0     	116.0     	127.0     
 ZMC8                           	112.0     	78.0      	82.0      	128.0     	89.0      	77.0      
 ZMC8                           	73.0      	94.0      	107.0     	145.0     	197.0     	253.0     
+;ID                             	Multipliers
 ZMC9                           	28.0      	31.0      	49.0      	42.0      	38.0      	38.0      
 ZMC9                           	33.0      	39.0      	29.0      	26.0      	24.0      	24.0      
 ZMC9                           	21.0      	19.0      	21.0      	19.0      	18.0      	18.0      
 ZMC9                           	20.0      	20.0      	21.0      	23.0      	23.0      	31.0      
 [JUNCTIONS]
 ;ID                            	Elev 	Demand    	Pattern                        
-J100                           	27.938	0         	                               ;	
-J1000                          	32.982	0         	                               ;	
-J1001                          	32.96	0         	                               ;	
-J1004                          	44.924	0         	                               ;	
-J1005                          	31.854	0         	ZMC8                           ;	PRVDL197
-J1006                          	31.923	0         	                               ;	
-J101                           	31.943	0.0003    	ZMC8                           ;	156_VDL 152_VDL
-J1010                          	40   	0         	                               ;	
-J1011                          	40   	0         	                               ;	
-J1012                          	40   	0         	                               ;	
-J1013                          	40   	0         	                               ;	
-J1017                          	42.163	0         	                               ;	
-J1019                          	42.213	0         	                               ;	
-J102                           	32.019	0.0005    	ZMC8                           ;	155_VDL 154_VDL 153_VDL
-J1021                          	40.116	0         	                               ;	
-J1022                          	40.113	0         	                               ;	
-J1024                          	42.432	0         	                               ;	
-J1025                          	42.474	0         	                               ;	
-J1026                          	42.476	0         	                               ;	
-J1027                          	42.509	0         	                               ;	
-J1028                          	41.865	0         	ZMC8                           ;	PRVDL196
-J1029                          	41.968	0         	                               ;	
-J1031                          	40.072	0         	                               ;	
-J1032                          	40.069	0         	                               ;	
-J1034                          	40.034	0         	                               ;	
-J1036                          	42.59	0         	                               ;	
-J1038                          	42.621	0         	                               ;	
-J1042                          	33.399	0         	                               ;	
-J1043                          	34.629	0         	                               ;	
-J1044                          	34.642	0         	                               ;	
-J1045                          	34.724	0         	                               ;	
-J1046                          	44.937	0         	                               ;	
-J1048                          	44.901	0         	                               ;	
-J1049                          	45.264	0.0036    	ZMC8                           ;	PRVDL191
-J105                           	37.441	0.0518    	ZMC7                           ;	1099_VDL 1108_VDL 1089_VDL
-J1050                          	22.098	0.0006    	ZMC8                           ;	Som_dos_Pinheiros
-J1051                          	40   	0         	                               ;	
-J1056                          	39.98	0         	                               ;	
-J1057                          	40   	0         	                               ;	
-J1058                          	40   	0         	                               ;	
-J1059                          	43.504	0         	                               ;	
-J106                           	33.331	0.0005    	ZMC8                           ;	150_VDL 149_VDL 148_VDL 147_VDL
-J1060                          	43.502	0         	                               ;	
-J1063                          	43.358	0         	                               ;	
-J1064                          	43.425	0         	                               ;	
-J107                           	28.281	0.0458    	ZMC7                           ;	1102_VDL 1101_VDL 1103_VDL
-J108                           	35.922	0.0007    	ZMC8                           ;	1038_VDL
-J1081                          	40.481	0         	                               ;	
-J1085                          	40.367	0         	                               ;	
-J109                           	39.771	0.0335    	ZMC7                           ;	1087_VDL 1086_VDL 1085_VDL
-J1092                          	40.019	0         	                               ;	
-J1094                          	42.332	0         	                               ;	
-J1095                          	40.018	0         	                               ;	
-J1096                          	40.024	0         	                               ;	
-J1097                          	40.023	0         	                               ;	
-J1098                          	40.021	0         	                               ;	
-J1099                          	40.014	0         	                               ;	
-J11                            	14.05	0.0518    	ZMC7                           ;	1158_VDL 1157_VDL
-J110                           	39.806	0.0014    	ZMC8                           ;	1040_VDL
-J1100                          	42.623	0         	                               ;	
-J1101                          	42.41	0         	                               ;	
-J1102                          	42.532	0         	ZMC8                           ;	PRVDL199
-J1107                          	40   	0         	                               ;	
-J1108                          	40   	0         	                               ;	
-J1109                          	40   	0         	                               ;	
-J111                           	35.92	0         	                               ;	
-J1110                          	40   	0         	                               ;	
-J1117                          	30.122	0         	                               ;	
-J1118                          	40.569	0.0056    	ZMC8                           ;	12_QUA 11_QUA Casa_Lavanda 21_QUA_B3 23_QUA_B3 25_QUA_B3 30_QUA_B3 29_QUA_B3 28_QUA_B3 27_QUA_B3 26_QUA_B3 15_QUA_B2 13_QUA J_G
-J1119                          	43.38	0.0045    	ZMC8                           ;	43_QUA 42_QUA 41_QUA 9_QUA_JG 12_QUA_JG 41_QUA_JG 26_QUA_JG 28_QUA_JG 29_QUA_JG 45_QUA_JG 24_QUA_JG 25_QUA_JG 42_QUA_JG 27_QUA_
-J112                           	18.762	0.0108    	ZMC9                           ;	005_VDL 006_VDL 014_VDL 013_VDL PRVDL009
-J1120                          	36.412	0.0083    	ZMC8                           ;	7_QUA 9_QUA 8_QUA 10_QUA 13_QUA_B2 16_QUA_B2 17_QUA_B2 18_QUA_B2 19_QUA_B2 20_QUA_B2 10_QUA_B1 Viveiro_Plantas_VDL
-J1121                          	43.836	0.0012    	ZMC8                           ;	1_QUA_JG 19_QUA_GJ 20_QUA_GJ 12_QUA_GJ 13_QUA_GJ 10_QUA_GJ 11_QUA_GJ 8_QUA_GJ 9_QUA_GJ 14_QUA_GJ 15_QUA_GJ 16_QUA_GJ 2_QUA_JG 3
-J1122                          	43.881	0.009     	ZMC8                           ;	573_VDL 574_VDL 571_VDL 570_VDL 575_VDL
-J1123                          	43.54	0.0078    	ZMC8                           ;	576_VDL 569_VDL 568_VDL 577_VDL 578_VDL 567_VDL 566_VDL 565_VDL 564_VDL
-J1124                          	42.022	0.0032    	ZMC8                           ;	509_VDL 508_VDL 507_VDL
-J1125                          	40.351	0.0093    	ZMC8                           ;	549_VDL 548_VDL 547_VDL 550_VDL 552_VDL 551_VDL 545_VDL 546_VDL
-J1126                          	38.927	0.0029    	ZMC8                           ;	136_VDL 139_VDL 134_VDL 137_VDL 138_VDL 146_VDL 135_VDL PRVDL014
-J1127                          	35.096	0.0003    	ZMC8                           ;	162_VDL 163_VDL 164_VDL
-J1128                          	27.835	0.0092    	ZMC8                           ;	1054_VDL 1055_VDL 1056_VDL 1057_VDL 1058_VDL 1059_VDL 1060_VDL
-J1129                          	9.431	0.0278    	ZMC9                           ;	422_VDL 421_VDL 420_VDL PRVDL033
-J113                           	39.935	0.0036    	ZMC8                           ;	1042B_VDL 144_VDL 142_VDL 143_VDL 145_VDL
-J1130                          	27.133	0.0053    	ZMC8                           ;	483_VDL 484_VDL 488/9_VDL 474_VDL 485_VDL 486/7_VDL
-J1131                          	28.849	0.004     	ZMC8                           ;	464_VDL 473_VDL 471_VDL
-J1132                          	22.973	0.0054    	ZMC8                           ;	626_VDL 625_VDL 624_VDL 621_VDL
-J1133                          	14.585	0.0582    	ZMC9                           ;	498_VDL 497_VDL PRVDL039
-J1134                          	13.938	0.0107    	ZMC9                           ;	382_VDL
-J1135                          	22.605	0.0327    	ZMC9                           ;	406/388_VDL 407_VDL 405_VDL 404_VDL
-J1136                          	26.183	0.0066    	ZMC8                           ;	630_VDL 627_VDL 628_VDL
-J1137                          	28.947	0.0063    	ZMC8                           ;	467_VDL 465_VDL 469_VDL 479_VDL 480_VDL 481_VDL 476_VDL 477/8_VDL 482_VDL
-J1138                          	25.88	0.0031    	ZMC8                           ;	965_VDL 970A_VDL 968_VDL 969_VDL 970_VDL PRVDL122 PRVDL123
-J1139                          	25.75	0.0031    	ZMC8                           ;	960_VDL 961_VDL 962_VDL 963_VDL 964_VDL PRVDL121
-J114                           	28.095	0.0551    	ZMC7                           ;	1201_TRF 1202_TRF 1203_TRF 1204_TRF 1205_TRF PRVDL205 PRVDL206
-J1140                          	24.976	0.0113    	ZMC8                           ;	Bancadas_Tenis Academia_Tenis Memorias_da_China 967_VDL 966_VDL
-J1141                          	9.991	0         	                               ;	
-J1142                          	9.079	0         	                               ;	
-J1143                          	19.617	0         	                               ;
-J1144                          	30.013	0.0014    	ZMC8                           ;	1015_VDL 1014_VDL
-J1145                          	28.146	0.0041    	ZMC8                           ;	1020/1_VDL 1022_VDL 1016_VDL
-J1146                          	38.401	0.0072    	ZMC7                           ;	1162_VDL 1163_VDL 1165_VDL 1166_VDL 1167_VDL
-J1147                          	19.161	0.0235    	ZMC7                           ;	1154_VDL 1155_VDL 1156_VDL 1159_VDL
-J1148                          	29.164	0.0009    	ZMC8                           ;	018_VDL 019_VDL
-J1149                          	29.777	0.0006    	ZMC8                           ;	019A_VDL
-J115                           	24.529	0.005     	ZMC9                           ;	9_VDL 8_VDL 17_VDL 16_VDL 15_VDL
-J1150                          	27.428	0.0003    	ZMC9                           ;	30_VDL 29_VDL
-J1151                          	26.796	0.0004    	ZMC9                           ;	20_VDL
-J1152                          	26.937	0.0263    	ZMC9                           ;	408_VDL 403_VDL
-J1153                          	28.743	0.0091    	ZMC8                           ;	400_VDL 401_VDL 402_VDL 396_VDL 397_VDL
-J1154                          	26.199	0.0029    	ZMC8                           ;	395_VDL
-J1156                          	26.102	0         	                               ;
-J1158                          	26.187	0         	                               ;
-J1159                          	30.223	0         	                               ;
-J116                           	36.183	0         	                               ;	
-J1160                          	31.373	0         	                               ;
-J1161                          	41.433	0         	                               ;
-J1162                          	41.727	0         	                               ;
-J1163                          	41.874	0         	                               ;
-J1164                          	46.383	0         	                               ;
-J1165                          	45.807	0         	                               ;
-J1166                          	45.519	0         	                               ;
-J1167                          	23.035	0         	                               ;
-J1168                          	18.023	0         	                               ;
-J1169                          	34.27	0         	                               ;
-J117                           	37.774	0.004     	ZMC8                           ;	1039_VDL PRVDL010
-J119                           	32.843	0.0019    	ZMC8                           ;	024A_VDL 025_VDL 025A_VDL 024_VDL
-J12                            	16.495	0         	                               ;	
-J120                           	35.722	0.0006    	ZMC8                           ;	120_VDL 119_VDL 151_VDL 118_VDL 117_VDL
-J121                           	36.878	0         	                               ;	
-J122                           	40.04	0         	                               ;	
-J123                           	21.857	0.009     	ZMC9                           ;	10_VDL 6_VDL PRVDL019
-J124                           	35.123	0.0025    	ZMC8                           ;	116_VDL 026_VDL
-J125                           	35.11	0.0025    	ZMC8                           ;	115_VDL 114_VDL PRVDL015
-J127                           	36.659	0.0005    	ZMC8                           ;	130_VDL 131_VDL 132_VDL 133_VDL
-J129                           	37.226	0         	                               ;	
-J130                           	33.083	0.0048    	ZMC8                           ;	63_VDL 64_VDL 65_VDL PRVDL018
-J131                           	36.777	0.0029    	ZMC8                           ;	1011_VDL 1010_VDL
-J132                           	31.583	0.0012    	ZMC8                           ;	022A_VDL 023A_VDL 46_VDL 45_VDL 44_VDL
-J133                           	18.532	0.0098    	ZMC9                           ;	002_VDL 016_VDL 015_VDL 003_VDL 004_VDL
-J134                           	37.491	0         	                               ;	
-J135                           	35.926	0.0001    	ZMC8                           ;	122_VDL 121_VDL
-J137                           	31.363	0.0062    	ZMC7                           ;	1168_VDL
-J138                           	35.948	0.0036    	ZMC8                           ;	PRVDL016
-J139                           	25.476	0.008     	ZMC9                           ;	12_VDL 11B_VDL 11A_VDL PRVDL020
-J141                           	33.168	0.0051    	ZMC8                           ;	1078_VDL
-J144                           	34.392	0.0003    	ZMC8                           ;	68_VDL 112_VDL 111_VDL 67_VDL 113_VDL
-J145                           	19.94	0         	                               ;	
-J146                           	26.164	0.0024    	ZMC9                           ;	19_VDL 18_VDL 21_VDL 22_VDL 66_VDL
-J147                           	36.295	0.0001    	ZMC8                           ;	123_VDL
-J148                           	37.288	0         	                               ;	
-J149                           	40.245	0.0002    	ZMC8                           ;	141_VDL
-J15                            	15.81	0.0129    	ZMC7                           ;	1243_TRF 1244_TRF 1245_TRF 1246_TRF 1247_TRF 1248_TRF
-J150                           	19.824	0         	                               ;	
-J151                           	42.077	0         	                               ;	
-J152                           	40.237	0.0004    	ZMC8                           ;	140_VDL
-J153                           	37.918	0.0001    	ZMC8                           ;	129_VDL
-J154                           	41.017	0.06      	ZMC7                           ;	1082_VDL 1146_VDL 1081_VDL
-J156                           	30   	0.0061    	ZMC9                           ;	43_VDL 33_VDL 32_VDL
-J157                           	26.86	0.0007    	ZMC9                           ;	27_VDL 26_VDL
-J158                           	20.377	0.0033    	ZMC9                           ;	3_VDL 2_VDL 1_VDL
-J159                           	40.272	0         	                               ;	
-J16                            	16.755	0.005     	ZMC7                           ;	1231_TRF 1232_TRF
-J160                           	28.691	0.0011    	ZMC9                           ;	34_VDL 35_VDL 31_VDL
-J161                           	36.295	0.0001    	ZMC8                           ;	124_VDL
-J162                           	36.282	0.0003    	ZMC8                           ;	125_VDL 110_VDL 109_VDL
-J163                           	22.975	0.0014    	ZMC9                           ;	5_VDL 7_VDL
-J164                           	20.095	0.0032    	ZMC9                           ;	001_VDL PRVDL022
-J165                           	37.969	0.0004    	ZMC8                           ;	128_VDL 127_VDL
-J166                           	24.829	0.0009    	ZMC9                           ;	23_VDL 14_VDL
-J167                           	41.077	0.0409    	ZMC7                           ;	1092_VDL 1091_VDL 1090_VDL
-J168                           	40.097	0.0023    	ZMC8                           ;	357_VDL 312/3_VDL
-J169                           	39.214	0.0391    	ZMC7                           ;	1098_VDL 1097_VDL 1093_VDL
-J170                           	21.349	0.0197    	ZMC9                           ;	Lobito_Kids_Club
-J171                           	24.64	0         	                               ;	
-J172                           	26.453	0.0012    	ZMC9                           ;	28_VDL
-J173                           	30.303	0.001     	ZMC8                           ;	62_VDL 60_VDL 61_VDL
-J174                           	21.932	0         	                               ;	
-J175                           	35.922	0.0002    	ZMC8                           ;	108_VDL 126_VDL
-J176                           	29.068	0.0013    	ZMC9                           ;	54_VDL 49_VDL 41_VDL
-J178                           	26.343	0.0013    	ZMC9                           ;	37_VDL 36_VDL
-J179                           	39.841	0.0139    	ZMC8                           ;	355_VDL 356_VDL 362_VDL 359_VDL 360_VDL 358_VDL
-J18                            	24.106	0.0011    	ZMC8                           ;	1073_VDL
-J181                           	30.361	0         	ZMC8                           ;	59_VDL
-J182                           	27.739	0.0017    	ZMC9                           ;	39_VDL 40_VDL
-J183                           	22.964	0.0113    	ZMC9                           ;	25_VDL 24_VDL PRVDL024
-J184                           	28.512	0.0024    	ZMC9                           ;	56_VDL 55_VDL
-J185                           	27.677	0.0015    	ZMC9                           ;	51_VDL 50_VDL
-J186                           	23.461	0         	                               ;	
-J187                           	6.792	0.0208    	ZMC9                           ;	Restaurante_Brezze Chuveiros_Praia PRVDL029
-J188                           	34.332	0.0003    	ZMC8                           ;	107_VDL 106_VDL 83_VDL
-J190                           	36.495	0.0001    	ZMC8                           ;	100_VDL 101_VDL 102_VDL
-J191                           	32.079	0.0007    	ZMC8                           ;	82_VDL 81_VDL 71_VDL 69_VDL
-J192                           	37.686	0.0022    	ZMC8                           ;	320_VDL 319_VDL 103_VDL 321_VDL
-J193                           	31.148	0         	                               ;	
-J194                           	31.118	0.0002    	ZMC8                           ;	72_VDL 73_VDL PRVDL017
-J195                           	10.105	0.1257    	ZMC9                           ;	Restaurante_Montys Teahouse_Oriental Boutique_Dunas Piscinas PRVDL028
-J196                           	33.091	0.001     	ZMC8                           ;	80_VDL 85_VDL 84_VDL 86_VDL PRVDL013
-J197                           	11.305	0.005     	ZMC9                           ;	PRVDL025
-J199                           	39.562	0.0214    	ZMC8                           ;	616_VDL 617_VDL 361_VDL Piscina_do_Spa_VDL Spa_VDL
-J2                             	10.803	0.0063    	ZMC7                           ;	1128_VDL
-J200                           	30.302	0         	                               ;	
-J201                           	23.928	0.0007    	ZMC9                           ;	38_VDL
-J202                           	31.93	0.0525    	ZMC7                           ;	1096_VDL 1095_VDL 1094_VDL
-J203                           	28.612	0.0056    	ZMC8                           ;	58_VDL PRVDL021
-J205                           	32.587	0.0005    	ZMC8                           ;	79_VDL 87_VDL 88_VDL 77_VDL 78_VDL
-J207                           	34.778	0.0006    	ZMC8                           ;	98_VDL 99_VDL 92_VDL 93_VDL 94_VDL 104_VDL 105_VDL
-J208                           	30.17	0.0002    	ZMC8                           ;	75_VDL 74_VDL 76_VDL
-J211                           	36.376	0         	                               ;	
-J212                           	28.862	0         	                               ;	
-J215                           	26.389	0.0013    	ZMC9                           ;	52_VDL
-J216                           	27.81	0         	                               ;	
-J218                           	14.611	0.0134    	ZMC9                           ;	Mini_Golf
-J219                           	39.654	0.0043    	ZMC8                           ;	314_VDL 354_VDL
-J220                           	45.44	0         	                               ;	
-J221                           	45.471	0.0018    	ZMC8                           ;	PRVDL178
-J222                           	34.262	0.0004    	ZMC8                           ;	96_VDL 97_VDL 90_VDL 89_VDL 91_VDL
-J225                           	14.603	0         	ZMC9                           ;	PRVDL027
-J227                           	28.044	0         	                               ;	
-J228                           	19.923	0         	ZMC9                           ;	PRVDL026
-J229                           	28.148	0         	                               ;	
-J230                           	28.217	0         	                               ;	
-J234                           	8.514	0.0633    	ZMC9                           ;	Gecko Creperie Beach_Bar PLATAFORMA_PRAIA Praca_VDL Sandbanks PRVDL030
-J236                           	34.908	0.0012    	ZMC8                           ;	95_VDL 318_VDL 317_VDL
-J237                           	10.128	0.0311    	ZMC9                           ;	Restaurante_Amore Escritorio_Shelsian Rest_Cantina_Lobo
-J239                           	37.901	0.0016    	ZMC8                           ;	315_VDL 316_VDL
-J240                           	30.037	0.2335    	ZMC9                           ;	Hotel_D._Filipa
-J241                           	34.159	0.0058    	ZMC8                           ;	303_VDL 304_VDL
-J242                           	41.066	0.0035    	ZMC8                           ;	351_VDL 1001_VDL 1002_VDL 1003_VDL
-J243                           	29.314	0         	                               ;	
-J244                           	41   	0.0026    	ZMC8                           ;	Restaurante_Spikes Auditorio_VDL
-J247                           	45.218	0         	                               ;	
-J250                           	9.899	0         	                               ;	
-J251                           	9.86 	0.0236    	ZMC9                           ;	429_VDL 430_VDL 431_VDL PRVDL032
-J253                           	25.987	0         	                               ;	
-J254                           	36.112	0.0084    	ZMC8                           ;	305_VDL 306_VDL 307_VDL
-J255                           	41.352	0         	                               ;	
-J256                           	41.263	0.0007    	ZMC8                           ;	VDL_Shopping
-J257                           	45.169	0         	                               ;	
-J258                           	7.06 	0.0236    	ZMC9                           ;	428_VDL 427_VDL 426_VDL 425_VDL 424_VDL 423_VDL
-J259                           	45.231	0         	                               ;	
-J26                            	17.648	0.0356    	ZMC7                           ;	1225_TRF 1226_TRF 1227_TRF 1228_TRF 1229_TRF 1230_TRF 1234_TRF 1235_TRF 1236_TRF 1237_TRF 1238_TRF 1239_TRF 1240_TRF 1241_TRF P
-J262                           	33.515	0         	                               ;	
-J267                           	34.2 	0         	                               ;	
-J268                           	40.807	0         	                               ;	
-J270                           	27.922	0.0023    	ZMC8                           ;	199_VDL 198_VDL 196_VDL 197_VDL PRVDL177
-J271                           	41.05	0.0091    	ZMC8                           ;	308_VDL 309_VDL 353_VDL 352_VDL PRVDL006
-J272                           	35.507	0.0022    	ZMC8                           ;	202_VDL PRVDL170
-J273                           	35.239	0.0022    	ZMC8                           ;	206/7_VDL 1006_VDL
-J275                           	7.127	0.0086    	ZMC9                           ;	432_VDL 433_VDL 434_VDL
-J277                           	41.724	0.0017    	ZMC8                           ;	210_VDL 211_VDL 212_VDL
-J279                           	36.848	0         	                               ;	
-J28                            	20.759	0.0097    	ZMC8                           ;	1072_VDL 1071_VDL 1070_VDL 1069_VDL 1018_VDL
-J282                           	41.777	0.0077    	ZMC8                           ;	Administracao_VDL Oficina_VDL PRVDL173 PRVDL171
-J283                           	40.844	0         	                               ;	
-J287                           	38.872	0.0018    	ZMC8                           ;	Governantas_VDL
-J293                           	7.565	0.0206    	ZMC9                           ;	435_VDL 436_VDL PRVDL034
-J296                           	38.761	0.0044    	ZMC8                           ;	503_VDL PRVDL005
-J297                           	38.759	0         	                               ;	
-J298                           	9.075	0.0104    	ZMC9                           ;	437_VDL 438_VDL 439_VDL
-J299                           	40.197	0.0019    	ZMC8                           ;	310_VDL 311_VDL
-J300                           	40.189	0.0047    	ZMC8                           ;	502_VDL 501_VDL
-J301                           	9.202	0         	                               ;	
-J302                           	11.803	0.0037    	ZMC9                           ;	440_VDL
-J303                           	36.994	0.0075    	ZMC8                           ;	208/9_VDL 203_VDL 205_VDL 200/1_VDL PRVDL169
-J304                           	12.702	0.0051    	ZMC9                           ;	441_VDL
-J305                           	34.573	0.0116    	ZMC8                           ;	185_VDL 184_VDL 182/3_VDL 181_VDL 180_VDL 179_VDL 178_VDL 177_VDL 176A_VDL 175/6_VDL 174_VDL 173/3A_VDL 176_VDL PRVDL166 PRVDL1
-J306                           	14.003	0.0074    	ZMC9                           ;	442_VDL 443_VDL
-J307                           	14.357	0.0058    	ZMC9                           ;	444_VDL 445_VDL
-J309                           	31.269	0.0021    	ZMC8                           ;	409_VDL
-J31                            	25.663	0         	                               ;	
-J310                           	40.266	0         	ZMC8                           ;	PRVDL212
-J311                           	12.359	0         	                               ;	
-J312                           	15.703	0.0041    	ZMC9                           ;	446_VDL 447_VDL
-J313                           	14.413	0         	                               ;	
-J315                           	16.121	0.0092    	ZMC9                           ;	448_VDL
-J317                           	17.101	0         	                               ;	
-J326                           	33.831	0.0052    	ZMC8                           ;	399_VDL 398_VDL 412_VDL 413_VDL 414_VDL
-J329                           	37.481	0.0131    	ZMC8                           ;	518_VDL 506_VDL 505/17_VDL 504_VDL 519_VDL
-J33                            	25.984	0         	                               ;	
-J331                           	30.772	0.0043    	ZMC8                           ;	1_QUA 2_QUA 4_QUA
-J332                           	30.741	0.0033    	ZMC8                           ;	195_VDL 194_VDL 193_VDL 192_VDL 191_VDL
-J334                           	23.503	0.0043    	ZMC8                           ;	490_VDL 491_VDL 492_VDL 493_VDL
-J336                           	11.978	0.0246    	ZMC9                           ;	385_VDL 386_VDL 387_VDL
-J340                           	32.524	0.0046    	ZMC8                           ;	521_VDL 522_VDL 523_VDL
-J343                           	28.519	0.004     	ZMC8                           ;	527_VDL 526_VDL 524/5_VDL Central_de_Seguranca PRVDL161
-J344                           	13.941	0.0522    	ZMC9                           ;	384_VDL 383_VDL 389_VDL
-J345                           	31.123	0.0063    	ZMC8                           ;	30_QUA 26_QUA 18_QUA 19_QUA 20_QUA 190_VDL PRQUA003
-J346                           	38.053	0.0057    	ZMC8                           ;	15/14_QUA 5_QUA 3_QUA_B1 4_QUA_B1 5_QUA_B1 6_QUA_B1 7_QUA_B1 8_QUA_B1 Tenis_QUA J_G_Bar PRQUA004
-J347                           	39.084	0.0004    	ZMC8                           ;	11_QUA_B2 1_QUA_B1 2_QUA_B1 9_QUA_B1
-J348                           	16.553	0.0023    	ZMC8                           ;	620_VDL 619_VDL 618_VDL
-J349                           	26.935	0.0009    	ZMC8                           ;	475_VDL 472_VDL 470/94_VDL
-J351                           	23.655	0.0033    	ZMC8                           ;	392/3/4_VDL
-J353                           	38.189	0.0047    	ZMC8                           ;	529_VDL 530_VDL 533_VDL 532_VDL
-J356                           	36.446	0.0017    	ZMC8                           ;	531_VDL PRVDL160
-J357                           	36.824	0.0078    	ZMC8                           ;	189_VDL 188_VDL 187_VDL 186_VDL 169_VDL 171/2_VDL 167_VDL 168_VDL 170_VDL PRVDL168 PRVDL163 PRVDL165
-J358                           	36   	0.0013    	ZMC8                           ;	528_VDL
-J359                           	39.6 	0.0169    	ZMC8                           ;	540_VDL 537_VDL 542_VDL 514_VDL 513_VDL 543_VDL 536_VDL 515_VDL 516_VDL 538/9_VDL
-J36                            	25.143	0.0048    	ZMC8                           ;	1019_VDL 1017_VDL
-J362                           	33.405	0.0065    	ZMC8                           ;	370_VDL 372_VDL 373_VDL 374_VDL
-J363                           	38.271	0.0069    	ZMC8                           ;	35_QUA 34_QUA 29_QUA 27_QUA 28_QUA
-J365                           	41.529	0.0082    	ZMC8                           ;	16_QUA 17_QUA 21_QUA 22_QUA 45_QUA 46_QUA
-J366                           	40.301	0.0036    	ZMC8                           ;	534_VDL 535_VDL PRVDL159
-J367                           	41.427	0.0015    	ZMC8                           ;	14_QUA_JG 16_QUA_JG 18_QUA_JG 19_QUA_JG 39_QUA_JG 23_QUA_JG 35_QUA_JG 15_QUA_JG 36_QUA_JG 17_QUA_JG 20_QUA_JG 21_QUA_JG 22_QUA_
-J368                           	42.053	0.014     	ZMC8                           ;	Condominio_JG 5_QUA_GJ 4_QUA_GJ 7_QUA_GJ 2_QUA_GJ 3_QUA_GJ 6_QUA_GJ 33_QUA_JG 6_QUA_JG 8_QUA_JG 32_QUA_JG 7_QUA_JG PRQUA002
-J370                           	30.762	0.001     	ZMC8                           ;	463_VDL 459_VDL 461_VDL
-J371                           	15.195	0         	ZMC8                           ;	PRVDL162
-J373                           	13.928	0         	                               ;	
-J374                           	21.217	0.0042    	ZMC8                           ;	376_VDL 377/8_VDL 379/80_VDL 375_VDL
-J375                           	37.959	0.0055    	ZMC8                           ;	37_QUA 36_QUA 32_QUA 31_QUA 23_QUA
-J376                           	40.938	0.0053    	ZMC8                           ;	24_QUA 25_QUA 47_QUA Restaurante_Paixa
-J379                           	37.621	0         	                               ;	
-J38                            	24.272	0.0295    	ZMC7                           ;	1131_VDL 1130_VDL 1129_VDL 1161_VDL
-J380                           	37.644	0.0016    	ZMC8                           ;	38_QUA
-J381                           	43.199	0.003     	ZMC8                           ;	511_VDL 510_VDL
-J383                           	45.619	0.0039    	ZMC8                           ;	44_QUA 18_QUA_GJ 17_QUA_GJ
-J385                           	29.81	0.0028    	ZMC8                           ;	457_VDL 453/5_VDL 454/6/8/62/623_VDL
-J386                           	40.401	0.0132    	ZMC8                           ;	512_VDL 544_VDL 556_VDL 554_VDL 553_VDL 555_VDL 557_VDL
-J387                           	41.142	0.0043    	ZMC8                           ;	40_QUA 39_QUA
-J388                           	29.461	0.0121    	ZMC8                           ;	579/80_VDL 604_VDL 603_VDL 602_VDL 615_VDL 605_VDL 606_VDL 581_VDL
-J390                           	41.589	0.003     	ZMC8                           ;	563_VDL PRVDL004
-J393                           	27.811	0.0034    	ZMC8                           ;	450_VDL 449_VDL 451_VDL
-J395                           	47.536	0.0175    	ZMC8                           ;	1_QUA_GJ Condominio_P._Benta
-J397                           	26.104	0.0073    	ZMC8                           ;	781_VDL 782_VDL 783_VDL 784_VDL 780_VDL PRVDL085
-J399                           	29.393	0.0052    	ZMC8                           ;	629_VDL 631_VDL
-J4                             	14.986	0         	                               ;	
-J40                            	17.461	0.0166    	ZMC7                           ;	1222/3_TRF 1224_TRF 1233_TRF PRVDL207 PRVDL204
-J400                           	29.387	0.0005    	ZMC8                           ;	756_VDL 757_VDL 758_VDL PRVDL082
-J401                           	30.042	0.0037    	ZMC8                           ;	763_VDL 764_VDL PRVDL084
-J402                           	30.419	0.0035    	ZMC8                           ;	760_VDL 761_VDL 762_VDL PRVDL083
-J403                           	37.838	0.0036    	ZMC8                           ;	562_VDL 559_VDL 558_VDL
-J404                           	27.991	0.0031    	ZMC8                           ;	785_VDL
-J405                           	23.275	0.0006    	ZMC8                           ;	788_VDL 789_VDL 790_VDL WC_Golf_16 PRVDL087
-J406                           	30.087	0.0006    	ZMC8                           ;	765_VDL
-J407                           	30.072	0         	                               ;	
-J408                           	28.802	0.0038    	ZMC8                           ;	750_VDL 751_VDL PRVDL081
-J409                           	33.266	0.0182    	ZMC8                           ;	582_VDL 583_VDL 607_VDL 608/9_VDL 584_VDL 585_VDL 586_VDL 587_VDL 591_VDL 592/3_VDL 594/5_VDL
-J41                            	17.744	0.0057    	ZMC8                           ;	1076_VDL 1077_VDL 1075_VDL 1074_VDL
-J410                           	36.272	0.0036    	ZMC8                           ;	561_VDL 560_VDL
-J411                           	28.64	0.0032    	ZMC8                           ;	738_VDL 739_VDL PRVDL044 PRVDL078
-J412                           	30.113	0.0018    	ZMC8                           ;	728A_VDL 728B_VDL PRVDL043 PRVDL042
-J413                           	30.672	0         	                               ;	
-J414                           	30.679	0.0005    	ZMC8                           ;	774_VDL 775_VDL
-J415                           	31.039	0.0037    	ZMC8                           ;	759_VDL 773_VDL PRVDL089
-J416                           	29.237	0         	                               ;	
-J417                           	21.585	0.0016    	ZMC8                           ;	786_VDL 787_VDL PRVDL086
-J419                           	38.823	0         	                               ;	
-J42                            	29.623	0.0032    	ZMC8                           ;	1030_VDL 1031_VDL
-J420                           	45.69	0         	                               ;	
-J421                           	18.767	0.0106    	ZMC8                           ;	601_VDL 614_VDL 613_VDL 612_VDL 599_VDL 600_VDL
-J422                           	30.174	0.0002    	ZMC8                           ;	752_VDL 753_VDL
-J423                           	31.36	0.0002    	ZMC8                           ;	772_VDL
-J424                           	29.263	0.0002    	ZMC8                           ;	742_VDL
-J425                           	28.868	0.0003    	ZMC8                           ;	740_VDL 741_VDL
-J426                           	30.159	0         	                               ;	
-J427                           	29.716	0.0019    	ZMC8                           ;	748_VDL 749_VDL PRVDL080
-J428                           	30.256	0.0022    	ZMC8                           ;	727/8_VDL 733_VDL PRVDL075
-J429                           	28.311	0         	                               ;	
-J431                           	31.566	0.0002    	ZMC8                           ;	771_VDL
-J432                           	31.237	0.0022    	ZMC8                           ;	770_VDL 769_VDL 768_VDL PRVDL088
-J433                           	31.044	0.0002    	ZMC8                           ;	754_VDL
-J434                           	29.331	0.0003    	ZMC8                           ;	747_VDL
-J435                           	29.588	0         	                               ;	
-J437                           	31.08	0         	                               ;	
-J438                           	31.249	0.0007    	ZMC8                           ;	755_VDL 776_VDL 777_VDL
-J44                            	29.497	0.0004    	ZMC8                           ;	1028/9_VDL
-J441                           	29.291	0         	                               ;	
-J442                           	30.029	0.0002    	ZMC8                           ;	767_VDL 766_VDL
-J443                           	29.373	0.0002    	ZMC8                           ;	746_VDL
-J444                           	29.42	0         	ZMC8                           ;	PRVDL079
-J445                           	29.377	0         	                               ;	
-J446                           	27.303	0.0114    	ZMC8                           ;	596_VDL 597_VDL 610_VDL 611_VDL 598_VDL PRVDL158
-J447                           	30.923	0         	                               ;	
-J449                           	29.763	0.0038    	ZMC8                           ;	737_VDL 736_VDL PRVDL077
-J45                            	27.032	0.0051    	ZMC8                           ;	1049_VDL 1048_VDL 1047_VDL
-J450                           	30.009	0.0002    	ZMC8                           ;	731_VDL
-J453                           	16.071	0.0025    	ZMC8                           ;	PRVDL152
-J454                           	30.546	0         	                               ;	
-J457                           	30.999	0.0003    	ZMC8                           ;	732_VDL 723_VDL 724_VDL
-J458                           	31.351	0         	                               ;	
-J459                           	31.339	0         	                               ;	
-J460                           	31.334	0         	                               ;	
-J461                           	29.79	0         	                               ;	
-J462                           	45.763	0         	ZMC8                           ;	PRVDL001
-J463                           	29.789	0.0004    	ZMC8                           ;	734_VDL
-J464                           	29.567	0.0002    	ZMC8                           ;	735_VDL
-J465                           	31.333	0.0018    	ZMC8                           ;	Casa_Yanina
-J466                           	44.563	0.005     	ZMC8                           ;	PRVDL003
-J467                           	30.729	0.0001    	ZMC8                           ;	729_VDL 730_VDL
-J468                           	31.777	0.0072    	ZMC8                           ;	632_VDL PRVDL041
-J469                           	29.592	0.0006    	ZMC8                           ;	743_VDL 744_VDL 745_VDL
-J47                            	16.679	0.0019    	ZMC7                           ;	1220_TRF 1219_TRF
-J471                           	31.694	0.0001    	ZMC8                           ;	726_VDL 725_VDL
-J474                           	30.792	0.0037    	ZMC8                           ;	PRVDL090
-J476                           	21.652	0.0084    	ZMC8                           ;	634_VDL 636_VDL
-J478                           	29.828	0         	                               ;	
-J479                           	22.798	0.0042    	ZMC8                           ;	635_VDL
-J480                           	29.927	0.0017    	ZMC8                           ;	PRVDL076
-J481                           	44.156	0.0064    	ZMC8                           ;	Centro_Medico PRVDL002
-J483                           	29.524	0         	                               ;	
-J485                           	23.057	0         	                               ;	
-J486                           	30.125	0         	                               ;	
-J488                           	29.277	0         	                               ;	
-J489                           	36.563	0.0039    	ZMC8                           ;	588_VDL 692_VDL 693_VDL
-J491                           	29.078	0         	                               ;	
-J493                           	31.785	0         	                               ;	
-J494                           	28.9 	0.0022    	ZMC8                           ;	1_EL 2_EL 3_EL 13_EL
-J498                           	35.275	0.0061    	ZMC8                           ;	589_VDL 590E_VDL 590_VDL
-J499                           	28.976	0.0048    	ZMC8                           ;	639_VDL 640_VDL 638_VDL PRVDL155
-J5                             	10.771	0         	                               ;	
-J500                           	34.973	0         	                               ;	
-J501                           	43.36	0.0011    	ZMC8                           ;	Pingo_Doce
-J502                           	22.696	0.0097    	ZMC8                           ;	637A_VDL 646_VDL 647_VDL 645B_VDL 645A_VDL PRVDL156 PRVDL157 PRVDL153
-J503                           	31.726	0.0042    	ZMC8                           ;	718_VDL 716_VDL 633_VDL
-J504                           	25.597	0.0068    	ZMC8                           ;	651_VDL 635B_VDL 637B_VDL PRVDL154
-J506                           	34.145	0.0005    	ZMC8                           ;	659_VDL
-J509                           	44.383	0         	                               ;	
-J510                           	33.976	0         	                               ;	
-J512                           	33.941	0         	                               ;	
-J513                           	44.461	0         	                               ;	
-J514                           	30.687	0         	                               ;	
-J516                           	31.217	0.0012    	ZMC8                           ;	714_VDL
-J517                           	31.172	0.0031    	ZMC8                           ;	712_VDL
-J52                            	27.189	0.0044    	ZMC8                           ;	1052/52A_VDL 1051_VDL 1050_VDL 1044_VDL
-J524                           	45.001	0.0037    	ZMC8                           ;	PRVDL190
-J525                           	26.984	0         	                               ;	
-J527                           	28.223	0.0057    	ZMC8                           ;	641_VDL 641A/643_VDL 644_VDL 642_VDL
-J528                           	30.255	0.0009    	ZMC8                           ;	691_VDL
-J532                           	30   	0.0015    	ZMC8                           ;	660_VDL 661_VDL
-J534                           	32.867	0         	                               ;	
-J535                           	29.926	0.0032    	ZMC8                           ;	715_VDL 717_VDL
-J537                           	30.081	0.0011    	ZMC8                           ;	690_VDL
-J539                           	32.075	0.0041    	ZMC8                           ;	708_VDL 710_VDL
-J54                            	23.689	0.0647    	ZMC7                           ;	1105_VDL 1114_VDL 1115_VDL 1112_VDL 1113_VDL
-J540                           	30   	0         	                               ;	
-J541                           	28.432	0.0012    	ZMC8                           ;	722_VDL 721_VDL 720_VDL 719_VDL
-J547                           	28.941	0.0033    	ZMC8                           ;	664_VDL 689_VDL
-J548                           	32.164	0.0021    	ZMC8                           ;	702_VDL 709_VDL
-J55                            	28.816	0.0729    	ZMC7                           ;	1116_VDL 1117_VDL 1118_VDL 1110_VDL 1111_VDL 1109_VDL
-J550                           	22.111	0.004     	ZMC8                           ;	6_EL
-J553                           	27.827	0.003     	ZMC8                           ;	686_VDL 687_VDL 688_VDL
-J554                           	27.716	0         	                               ;	
-J555                           	19.976	0.0006    	ZMC8                           ;	648_VDL Sportive_Club
-J556                           	25.605	0         	                               ;	
-J558                           	31.304	0.0021    	ZMC8                           ;	662_VDL 665_VDL
-J559                           	31.266	0.0027    	ZMC8                           ;	707_VDL
-J56                            	29.411	0.0196    	ZMC7                           ;	1119_VDL 1120_VDL
-J560                           	23.678	0.0013    	ZMC8                           ;	685_VDL
-J561                           	26.163	0         	                               ;	
-J562                           	25.986	0.0008    	ZMC8                           ;	684_VDL
-J564                           	31.774	0.0003    	ZMC8                           ;	713_VDL
-J565                           	26.04	0         	                               ;	
-J566                           	25.985	0         	                               ;	
-J569                           	24.995	0.0016    	ZMC8                           ;	682_VDL
-J572                           	31.494	0         	                               ;	
-J574                           	34.273	0.001     	ZMC8                           ;	653_VDL 654/654A_VDL 654B_VDL
-J575                           	20.136	0         	                               ;	
-J578                           	33.274	0.005     	ZMC8                           ;	652_VDL 635C_VDL PRVDL045
-J579                           	21.176	0         	                               ;	
-J58                            	31.36	0.0452    	ZMC7                           ;	1153_VDL 1151_VDL 1150_VDL 1149_VDL
-J580                           	21.875	0         	                               ;	
-J581                           	21.967	0         	                               ;	
-J582                           	22.043	0         	                               ;	
-J583                           	23.441	0         	                               ;	
-J585                           	34.622	0         	                               ;	
-J588                           	34.561	0.0034    	ZMC8                           ;	655_VDL PRVDL046
-J589                           	26.222	0.0004    	ZMC8                           ;	683_VDL
-J590                           	26.483	0.0033    	ZMC8                           ;	667_VDL 666_VDL
-J592                           	32.765	0         	                               ;	
-J593                           	29.932	0.0014    	ZMC8                           ;	818/9_VDL 700_VDL
-J594                           	29.977	0         	                               ;	
-J595                           	29.988	0         	                               ;	
-J596                           	28.759	0.0007    	ZMC8                           ;	806_VDL 805_VDL 804_VDL 803_VDL
-J597                           	33.815	0.0032    	ZMC8                           ;	656_VDL 655A_VDL PRVDL047
-J598                           	32.709	0         	                               ;	
-J60                            	18.932	0.0017    	ZMC7                           ;	1211_TRF Casa_de_Madeira
-J601                           	28.741	0         	                               ;	
-J602                           	23.694	0         	                               ;	
-J603                           	30   	0         	                               ;	
-J605                           	23.829	0.0008    	ZMC8                           ;	681_VDL
-J606                           	30.738	0.0019    	ZMC8                           ;	826_VDL 698_VDL
-J608                           	25.885	0.0055    	ZMC8                           ;	680_VDL
-J61                            	31.221	0.0271    	ZMC7                           ;	1121_VDL 1122_VDL 1123_VDL
-J610                           	25.901	0         	                               ;	
-J614                           	29.966	0.0007    	ZMC8                           ;	822_VDL 821_VDL 823_VDL
-J616                           	29.279	0.0007    	ZMC8                           ;	817_VDL 820_VDL 813_VDL 814_VDL
-J620                           	35.293	0.0038    	ZMC8                           ;	841_VDL 840_VDL 839_VDL 838_VDL 837_VDL PRVDL048
-J621                           	32.024	0.0042    	ZMC8                           ;	829_VDL 830_VDL 828_VDL 827_VDL
-J622                           	35.154	0.0012    	ZMC8                           ;	836_VDL 835_VDL 834_VDL 833_VDL 832_VDL
-J625                           	33.541	0.0003    	ZMC8                           ;	831_VDL
-J627                           	29.004	0.0001    	ZMC8                           ;	810_VDL
-J63                            	34.154	0.0024    	ZMC8                           ;	1027_VDL 1032_VDL 1036_VDL
-J631                           	33.571	0         	                               ;	
-J633                           	30.145	0.0015    	ZMC8                           ;	872_VDL 871_VDL 825_VDL 824_VDL 870_VDL
-J634                           	29.103	0.0001    	ZMC8                           ;	816_VDL
-J635                           	29.112	0.0003    	ZMC8                           ;	811_VDL
-J636                           	29.111	0.0001    	ZMC8                           ;	815_VDL
-J637                           	35.07	0.0032    	ZMC8                           ;	854_VDL 855_VDL 856_VDL 857_VDL PRVDL051
-J638                           	35.202	0.0034    	ZMC8                           ;	858_VDL 859_VDL 860_VDL 861_VDL PRVDL049
-J639                           	29.174	0.0001    	ZMC8                           ;	873_VDL
-J64                            	32.401	0.0498    	ZMC7                           ;	1132A_VDL 1132_VDL
-J640                           	24.66	0.0001    	ZMC8                           ;	PRVDL142
-J642                           	29.281	0.0002    	ZMC8                           ;	812_VDL
-J644                           	24.739	0.0008    	ZMC8                           ;	679_VDL
-J645                           	29.322	0         	                               ;	
-J646                           	25.465	0         	                               ;	
-J649                           	29.407	0.0005    	ZMC8                           ;	809_VDL 808_VDL 807_VDL
-J652                           	25.569	0         	                               ;	
-J653                           	25.57	0         	                               ;	
-J654                           	25.561	0.0008    	ZMC8                           ;	669_VDL
-J658                           	34.58	0.0005    	ZMC8                           ;	863_VDL 864_VDL 862_VDL
-J659                           	25.937	0.0022    	ZMC8                           ;	671_VDL 678_VDL
-J664                           	26.217	0.0017    	ZMC8                           ;	668_VDL 670_VDL
-J667                           	35.585	0.0039    	ZMC8                           ;	846_VDL 845_VDL 844_VDL PRVDL052
-J668                           	29.969	0.0053    	ZMC8                           ;	889_VDL 890_VDL PRVDL055
-J670                           	32.441	0.0008    	ZMC8                           ;	32_EL 46_EL 47_EL
-J672                           	35.476	0.0094    	ZMC8                           ;	847_VDL 848_VDL 849_VDL 850_VDL 851_VDL 852_VDL 853_VDL PRVDL053 PRVDL050
-J673                           	34.079	0.0008    	ZMC8                           ;	865_VDL
-J674                           	31.465	0.0007    	ZMC8                           ;	891_VDL
-J68                            	26.185	0.0022    	ZMC8                           ;	1053_VDL 1061_VDL
-J680                           	29.68	0         	                               ;	
-J684                           	33.42	0.0011    	ZMC8                           ;	866_VDL 887_VDL 886_VDL 885_VDL
-J687                           	29.985	0.0006    	ZMC8                           ;	920_VDL 888_VDL
-J688                           	29.656	0.0001    	ZMC8                           ;	921_VDL
-J69                            	20.147	0.0038    	ZMC7                           ;	1215_TRF 1214_TRF 1213_TRF
-J690                           	31.029	0.0018    	ZMC8                           ;	868_VDL 867_VDL 884_VDL 883_VDL 882_VDL 881_VDL 869_VDL
-J692                           	29.317	0.0001    	ZMC8                           ;	922_VDL
-J695                           	31.538	0.0003    	ZMC8                           ;	892_VDL
-J697                           	30.135	0         	                               ;	
-J7                             	16.833	0.0037    	ZMC8                           ;	1068_VDL 1065_VDL 1064_VDL
-J700                           	31.502	0.0037    	ZMC8                           ;	893_VDL PRVDL054
-J707                           	31.17	0         	                               ;	
-J709                           	31.18	0.0009    	ZMC8                           ;	677_VDL
-J71                            	27.068	0.0467    	ZMC7                           ;	1104_VDL 1106_VDL 1100_VDL 1107_VDL
-J710                           	29.935	0.0021    	ZMC8                           ;	878_VDL 877_VDL 876_VDL 874/5_VDL
-J715                           	32.526	0.0028    	ZMC8                           ;	43_EL 44_EL
-J720                           	32.797	0.0016    	ZMC8                           ;	35_EL 36_EL
-J725                           	31.714	0         	                               ;	
-J728                           	32.896	0.0009    	ZMC8                           ;	675_VDL 676_VDL
-J729                           	30   	0         	                               ;	
-J73                            	29.649	0.0008    	ZMC8                           ;	1043_VDL
-J731                           	29.886	0         	                               ;	
-J733                           	33.089	0.0016    	ZMC8                           ;	673_VDL 674_VDL
-J734                           	30   	0         	                               ;	
-J74                            	35.565	0.047     	ZMC7                           ;	1083_VDL 1148_VDL
-J742                           	29.868	0         	                               ;	
-J743                           	29.86	0.0008    	ZMC8                           ;	879A_VDL 880_VDL 879_VDL
-J744                           	37.277	0         	                               ;	
-J747                           	29.903	0.0002    	ZMC8                           ;	879B_VDL
-J750                           	38.835	0         	                               ;	
-J754                           	30.081	0.0011    	ZMC8                           ;	894_VDL 895_VDL
-J756                           	39.664	0         	                               ;	
-J762                           	27.957	0.0002    	ZMC8                           ;	897_VDL 896_VDL
-J764                           	36.959	0.0007    	ZMC8                           ;	672_VDL
-J767                           	39.962	0         	                               ;	
-J77                            	29.485	0         	                               ;	
-J771                           	24.963	0.0097    	ZMC8                           ;	919_VDL 918_VDL 899_VDL 898_VDL 926_VDL 925_VDL 924_VDL 923_VDL 927_VDL 927B_VDL PRVDL102 PRVDL101
-J772                           	22.692	0.0003    	ZMC8                           ;	933_VDL 932_VDL 934_VDL
-J773                           	35.573	0         	                               ;	
-J774                           	35.63	0         	                               ;	
-J775                           	34.141	0         	                               ;	
-J776                           	21.167	0.0004    	ZMC8                           ;	936_VDL 935_VDL
-J777                           	34.467	0         	ZMC8                           ;	PRVDL192
-J778                           	20.689	0         	                               ;	
-J779                           	36.22	0         	                               ;	
-J782                           	36.279	0         	                               ;	
-J784                           	41.569	0         	                               ;	
-J785                           	32.871	0.0016    	ZMC8                           ;	35B.14_VDLIII
-J787                           	37.136	0         	                               ;	
-J791                           	32.477	0.0019    	ZMC8                           ;	42_EL 37_EL 41_EL
-J792                           	38.037	0         	                               ;	
-J794                           	20.639	0.0007    	ZMC8                           ;	939_VDL 938_VDL 937_VDL
-J795                           	23.54	0.002     	ZMC8                           ;	917_VDL 916_VDL 915_VDL 914_VDL 913_VDL 912_VDL 911_VDL 928_VDL 929_VDL 930_VDL 931_VDL
-J798                           	38.481	0         	                               ;	
-J799                           	38.508	0.0026    	ZMC8                           ;	35B.33_VDLIII
-J8                             	16.052	0         	                               ;	
-J80                            	9.553	0         	                               ;	
-J802                           	34.394	0         	                               ;	
-J806                           	34.15	0.0016    	ZMC8                           ;	35B.15_VDLIII
-J81                            	35.378	0.0031    	ZMC8                           ;	1026_VDL 1037_VDL
-J810                           	34.342	0         	                               ;	
-J812                           	44.165	0         	                               ;	
-J815                           	20.227	0         	                               ;	
-J816                           	20.092	0         	                               ;	
-J82                            	24.21	0.0022    	ZMC8                           ;	007_VDL 008_VDL PRVDL023
-J820                           	35.358	0         	                               ;	
-J825                           	35.449	0         	                               ;	
-J827                           	43.551	0         	                               ;	
-J83                            	36.366	0.0128    	ZMC7                           ;	1088_VDL
-J831                           	31.468	0         	                               ;	
-J834                           	31.397	0.0016    	ZMC8                           ;	39_EL
-J836                           	44.106	0         	                               ;	
-J838                           	37.775	0         	                               ;	
-J84                            	26.332	0.0008    	ZMC8                           ;	011_VDL 012_VDL
-J841                           	20.314	0.0098    	ZMC8                           ;	908_VDL 909_VDL 902_VDL 903_VDL 904_VDL 905/5A_VDL 901_VDL 900_VDL PRVDL096 PRVDL099 LAGO_FLAMINGOS
-J848                           	42.537	0.0007    	ZMC8                           ;	PRVDL189
-J849                           	42.321	0         	                               ;	
-J85                            	30.258	0.0006    	ZMC8                           ;	161_VDL 160_VDL 158_VDL 159_VDL 157_VDL
-J851                           	42.368	0         	                               ;	
-J852                           	19.725	0.0007    	ZMC8                           ;	910_VDL 906_VDL 907_VDL
-J854                           	25.953	0.0062    	ZMC8                           ;	13A_FV 2A_FV 1A_FV 5_FV 3_FV 6_FV 7_FV 8_FV 9_FV 10_FV 11_FV 12_FV 2B_FV 1B_FV 13B_FV
-J855                           	19.526	0.0051    	ZMC8                           ;	PRVDL097
-J856                           	21.296	0         	                               ;	
-J858                           	19.544	0         	                               ;	
-J86                            	31.149	0.0038    	ZMC8                           ;	1024_VDL 1023_VDL 1025_VDL 1013_VDL PRVDL011
-J860                           	19.998	0.0028    	ZMC8                           ;	950_VDL 952_VDL 953_VDL PRVDL103
-J861                           	42.322	0         	ZMC8                           ;	PRVDL193
-J868                           	26.515	0.0015    	ZMC8                           ;	945_VDL 944_VDL 943_VDL 946_VDL
-J869                           	43.007	0         	                               ;	
-J87                            	38.245	0.0084    	ZMC8                           ;	1042/1045_VDL 1042A_VDL 1034_VDL 1033_VDL 1035_VDL 1041_VDL
-J870                           	43.025	0         	                               ;	
-J872                           	43.406	0         	                               ;	
-J873                           	26.847	0.0002    	ZMC8                           ;	947_VDL
-J874                           	28.971	0.0007    	ZMC8                           ;	941_VDL 942_VDL
-J875                           	26.935	0.0007    	ZMC8                           ;	949A_VDL 949_VDL
-J878                           	36.107	0.001     	ZMC8                           ;	37.12/37.24_VDLIII
-J882                           	43.882	0         	                               ;	
-J889                           	43.882	0         	                               ;	
-J891                           	43.877	0         	                               ;	
-J895                           	36.459	0.0012    	ZMC8                           ;	37.10/37.11_VDLIII
-J898                           	36.455	0         	                               ;	
-J899                           	43.825	0         	                               ;	
-J90                            	37.483	0.0125    	ZMC7                           ;	1126_VDL 1084_VDL
-J901                           	25.621	0.0087    	ZMC8                           ;	954_VDL 955_VDL 956_VDL 957/8_VDL 959_VDL PRVDL104 PRVDL105
-J902                           	43.807	0.0011    	ZMC8                           ;	PRVDL194
-J903                           	43.762	0         	                               ;	
-J904                           	43.756	0         	                               ;	
-J909                           	43.726	0         	                               ;	
-J91                            	36.763	0.0212    	ZMC7                           ;	1124_VDL 1125_VDL PRVDL176
-J910                           	26.411	0.0008    	ZMC8                           ;	940_VDL
-J913                           	42.529	0.0001    	ZMC8                           ;	Escritorio_J_Hammond
-J915                           	26.139	0         	                               ;	
-J916                           	25.792	0         	                               ;	
-J922                           	41.66	0         	                               ;	
-J923                           	41.612	0         	                               ;	
-J926                           	41.663	0         	                               ;	
-J928                           	26.235	0.0022    	ZMC8                           ;	PRVDL124 PRVDL112
-J930                           	38.267	0         	                               ;	
-J932                           	19.105	0         	                               ;	
-J933                           	21.435	0.0011    	ZMC8                           ;	971_VDL 972_VDL 989_VDL
-J935                           	38.523	0         	                               ;	
-J936                           	38.513	0         	                               ;	
-J940                           	38.334	0         	ZMC8                           ;	PRVDL195
-J943                           	41.09	0         	                               ;	
-J944                           	41.087	0         	                               ;	
-J948                           	39.742	0         	                               ;	
-J949                           	25.088	0.0012    	ZMC8                           ;	987_VDL 988_VDL
-J954                           	26.446	0.0011    	ZMC8                           ;	985_VDL 984_VDL 986_VDL
-J955                           	39.451	0         	                               ;	
-J958                           	39.613	0         	                               ;	
-J959                           	39.654	0         	                               ;	
-J96                            	27.771	0.004     	ZMC8                           ;	017_VDL 017A_VDL
-J967                           	39.383	0         	                               ;	
-J968                           	39.401	0         	                               ;	
-J970                           	39.481	0         	                               ;	
-J971                           	23.656	0.0011    	ZMC8                           ;	973_VDL 974_VDL Casa_do_Rei
-J976                           	23.145	0.0039    	ZMC8                           ;	983_VDL 975_VDL 978_VDL 976_VDL 977_VDL PRVDL119
-J982                           	29.751	0         	                               ;	
-J983                           	29.815	0         	                               ;	
-J984                           	38.376	0         	                               ;	
-J985                           	38.351	0         	                               ;	
-J986                           	15.823	0.0007    	ZMC8                           ;	982_VDL Casa_Miradouro Estrela_Meio_Dia
-J987                           	36.084	0         	                               ;	
-J988                           	12.942	0         	                               ;	
-J990                           	40   	0         	                               ;	
-J991                           	40   	0         	                               ;	
-J992                           	40   	0         	                               ;	
-J996                           	40   	0         	                               ;	
-J999                           	44.42	0.0017    	ZMC8                           ;	Edificio_Cafe PRVDL187 LAGO_ROYAL
-PU928_Dis                      	13.934	0.0307    	ZMC9                           ;	391_VDL 381_VDL 499_VDL
-PU928_Suc                      	13.934	0.0113    	ZMC9                           ;	500_VDL
-PU929_Dis                      	30.391	0.0027    	ZMC8                           ;	020_VDL 022_VDL
-PU929_Suc                      	30.391	0.0019    	ZMC8                           ;	021/023_VDL
-PU930_Dis                      	30.105	0         	                               ;	
-PU930_Suc                      	29.534	0.0018    	ZMC9                           ;	48_VDL 47_VDL
-PU933_Dis                      	28.161	0.0001    	ZMC9                           ;	57_VDL
-PU933_Suc                      	28.612	0.0036    	ZMC9                           ;53_VDL
-V919_Dw                        	8.232	0         	                               ;	
-V919_Up                        	15.241	0.0006    	ZMC8                           ;	495_VDL
-V920_Dw                        	20.073	0         	                               ;	
-V920_Up                        	20.065	0         	                               ;	
-V921_Dw                        	31.188	0.0074    	ZMC8                           ;	301_VDL 302N_VDL PRVDL012
-V921_Up                        	30.778	0         	                               ;	
-V922_Dw                        	29.279	0         	                               ;	
-V922_Up                        	29.35	0         	                               ;	
-V923_Dw                        	20.08	0         	                               ;	
-V923_Up                        	20.082	0         	                               ;	
-V924_Up                        	45.283	0         	                               ;	
-V925_Up                        	45.287	0         	                               ;	
-V926_Dw                        	32.55	0.0016    	ZMC8                           ;	411_VDL
-V926_Up                        	32.55	0.0001    	ZMC8                           ;	410_VDL
-V927_Dw                        	45.225	0         	                               ;
-V927_Up                        	45.225	0         	                               ;
+J100	28.47805786			;			
+J1000	32.89411545			;			
+J1001	32.89411545			;			
+J1004	45.12267303			;			
+J1005	32.47925186			;			
+J1006	32.47925186			;			
+J101	32.50737762	0.0003	ZMC8	;	156_VDL 152_VDL		
+J1010	40			;			
+J1011	40			;			
+J1012	40			;			
+J1013	40			;			
+J1017	42.37656021			;			
+J1019	42.37656021			;			
+J102	32.50737762	0.0005	ZMC8	;	153_VDL 154_VDL 155_VDL		
+J1021	40.03065109			;			
+J1022	40.03065109			;			
+J1024	42.46793365			;			
+J1025	42.71959305			;			
+J1026	42.71959305			;			
+J1027	42.71959305			;			
+J1028	42.07633591			;			
+J1029	42.07633591			;			
+J1031	40.02007675			;			
+J1032	40.02007675			;			
+J1034	40.02007675			;			
+J1036	42.87987137			;			
+J1038	42.87987137			;			
+J1042	34.37887955			;			
+J1043	35.54587173			;			
+J1044	35.54587173			;			
+J1045	35.54587173			;			
+J1046	45.05315018			;			
+J1048	45.05315018			;			
+J1049	45.1291275	0.0036	ZMC8	;	PRVDL191		
+J105	38.7543602	0.0518	ZMC7	;	1089_VDL 1099_VDL 1108_VDL		
+J1050	21.91332817	0.0006	ZMC8	;	Som_dos_Pinheiros		
+J1051	40			;			
+J1056	39.6055069			;			
+J1057	40			;			
+J1058	40			;			
+J1059	43.57948303			;			
+J106	33.65755844	0.0005	ZMC8	;	147_VDL 150_VDL 149_VDL 148_VDL		
+J1060	43.57948303			;			
+J1063	43.57948303			;			
+J1064	43.57948303	0.0000	ZMC8	;	PRVDL199		
+J107	28.95829201	0.0458	ZMC7	;	1103_VDL 1101_VDL 1102_VDL		
+J108	35.71187973	0.0007	ZMC8	;	1038_VDL		
+J1081	40			;			
+J1085	40			;			
+J109	40.26479721	0.0335	ZMC7	;	1087_VDL 1085_VDL 1086_VDL		
+J1092	40			;			
+J1094	43.11621094			;			
+J1095	40			;			
+J1096	40			;			
+J1097	40			;			
+J1098	40			;			
+J1099	40			;			
+J11	13.91197491	0.0518	ZMC7	;	1158_VDL 1157_VDL		
+J110	39.81750107	0.0014	ZMC8	;	1040_VDL		
+J1100	43.11621094			;			
+J1101	43.11621094			;			
+J1102	43.11621094			;			
+J1107	40			;			
+J1108	40			;			
+J1109	40			;			
+J111	36.39546585			;			
+J1110	40			;			
+J1117	30.2126236			;			
+J1118	39.5495491	0.0041	ZMC8	;	13_QUA_JG 11_QUA_JG 34_QUA_JG 10_QUA_JG Lavandaria_(Fr._C) 13_QUA J_Golfe_Fracao_B 12_QUA 30_QUA_B3 29_QUA_B3 25_QUA_B3 26_QUA_B3 28_QUA_B3 27_QUA_B3 15_QUA_B2 21_QUA_B3 23_QUA_B3		
+J1119	44.32558441	0.0045	ZMC8	;	12_QUA_JG 9_QUA_JG 24_QUA_JG 25_QUA_JG 41_QUA_JG 26_QUA_JG 27_QUA_JG 42_QUA_JG 28_QUA_JG 29_QUA_JG 30_QUA_JG 43_QUA_JG 45_QUA_JG 44_QUA_JG 41_QUA 43_QUA 42_QUA		
+J112	18.79626083	0.0108	ZMC9	;	PRVDL009 006_VDL 014_VDL 005_VDL 013_VDL		
+J1120	41.98685455	0.0053	ZMC8	;	9_QUA 20_QUA_B2 7_QUA 19_QUA_B2 10_QUA_B1 8_QUA 13_QUA_B2 18_QUA_B2 16_QUA_B2 17_QUA_B2		
+J1121	44.28266525	0.0012	ZMC8	;	8_QUA_GJ 12_QUA_GJ 9_QUA_GJ 10_QUA_GJ 11_QUA_GJ 13_QUA_GJ 15_QUA_GJ 14_QUA_GJ 5_QUA_JG 4_QUA_JG 16_QUA_GJ 19_QUA_GJ 3_QUA_JG 20_QUA_GJ 2_QUA_JG 31_QUA_JG 1_QUA_JG		
+J1122	40.51820374	0.0090	ZMC8	;	573_VDL 574_VDL 571_VDL 575_VDL 570_VDL		
+J1123	40.52416611	0.0078	ZMC8	;	576_VDL 564_VDL 565_VDL 569_VDL 568_VDL 566_VDL 578_VDL 577_VDL 567_VDL		
+J1124	40.81431198	0.0016	ZMC8	;	508_VDL 509_VDL		
+J1125	39.44477844	0.0093	ZMC8	;	552_VDL 551_VDL 545_VDL 546_VDL 549_VDL 550_VDL 548_VDL 547_VDL		
+J1126	39.04069901	0.0029	ZMC8	;	135_VDL 146_VDL PRVDL014 136_VDL 139_VDL 134_VDL 137_VDL 138_VDL		
+J1127	34.88255692	0.0003	ZMC8	;	162_VDL 164_VDL 163_VDL		
+J1128	23.13192368	0.0092	ZMC8	;	1056_VDL 1057_VDL 1055_VDL 1058_VDL 1054_VDL 1060_VDL 1059_VDL		
+J1129	9.986895561	0.0278	ZMC9	;	421_VDL 422_VDL 420_VDL PRVDL033		
+J113	40	0.0036	ZMC8	;	1042B_VDL 145_VDL 144_VDL 142_VDL 143_VDL		
+J1130	24.26281548	0.0053	ZMC8	;	483_VDL 484_VDL 488/9_VDL 485_VDL 474_VDL 486/7_VDL		
+J1131	30	0.0040	ZMC8	;	473_VDL 471_VDL 464_VDL		
+J1132	18.79320908	0.0054	ZMC8	;	621_VDL 624_VDL 625_VDL 626_VDL		
+J1133	10	0.0582	ZMC9	;	497_VDL PRVDL039 498_VDL		
+J1134	15.82678604	0.0107	ZMC9	;	382_VDL		
+J1135	19.15390968	0.0327	ZMC9	;	404_VDL 405_VDL 407_VDL 406/388_VDL		
+J1136	20	0.0066	ZMC8	;	627_VDL 628_VDL 630_VDL		
+J1137	26.82603264	0.0063	ZMC8	;	482_VDL 465_VDL 481_VDL 476_VDL 467_VDL 480_VDL 479_VDL 469_VDL 477/8_VDL		
+J1138	31.37014389	0.0031	ZMC8	;	965_VDL 970_VDL 968_VDL 970A_VDL PRVDL122 PRVDL123 969_VDL		
+J1139	33.2914505	0.0031	ZMC8	;	964_VDL 960_VDL PRVDL121 961_VDL 963_VDL 962_VDL		
+J114	28.60969162	0.0551	ZMC7	;	PRVDL206 1205_TRF PRVDL205 1204_TRF 1203_TRF 1202_TRF 1201_TRF		
+J1140	27.77501678	0.0113	ZMC8	;	Academia_Tenis Bancadas_Tenis 966_VDL 967_VDL Memorias_da_China		
+J1141	10.10458851			;			
+J1142	9.180157661			;			
+J1143	18.44303322			;			
+J1144	27.13449287	0.0014	ZMC8	;	1014_VDL 1015_VDL		
+J1145	27.02332497	0.0041	ZMC8	;	1016_VDL 1020/1_VDL 1022_VDL		
+J1146	37.30834198	0.0072	ZMC7	;	1162_VDL 1167_VDL 1163_VDL 1166_VDL 1165_VDL		
+J1147	20.04309845	0.0235	ZMC7	;	1156_VDL 1159_VDL 1155_VDL 1154_VDL		
+J1148	29.21507645	0.0009	ZMC8	;	019_VDL 018_VDL		
+J1149	30	0.0006	ZMC8	;	019A_VDL		
+J115	25.55404091	0.0050	ZMC9	;	17_VDL 8_VDL 9_VDL 15_VDL 16_VDL		
+J1150	27.54614639	0.0003	ZMC9	;	30_VDL 29_VDL		
+J1151	27.47869301	0.0004	ZMC9	;	20_VDL		
+J1152	26.54420471	0.0263	ZMC9	;	408_VDL 403_VDL		
+J1153	30	0.0091	ZMC8	;	402_VDL 400_VDL 401_VDL 397_VDL 396_VDL		
+J1154	24.69860458	0.0029	ZMC8	;	395_VDL		
+J1156	25.08642769			;			
+J1158	26.65992737			;			
+J1159	38.7101059	0.0040	ZMC8	;	PRVDL005		
+J116	36.39546585			;			
+J1160	38.62974167	0.0010	ZMC8	;	518_VDL 503_VDL		
+J1161	38.58042145	0.0000	ZMC8	;	504_VDL		
+J1162	38.53392792	0.0063	ZMC8	;	505/17_VDL		
+J1163	38.92725754	0.0045	ZMC8	;	507_VDL 506_VDL		
+J1164	46.62948608	0.0015	ZMC8	;	11_QUA Casa_Lavanda		
+J1165	46.69065857	0.0012	ZMC8	;	10_QUA		
+J1166	45.44901276	0.0018	ZMC8	;	Viveiro_Plantas_VDL		
+J1167	25.61045074	0.0086	ZMC8	;	599_VDL 612_VDL 611_VDL 610_VDL 598_VDL		
+J1168	19.4950161	0.0087	ZMC8	;	PRVDL158 646_VDL 647_VDL		
+J1169	37.91991043	0.0137	ZMC8	;	589_VDL 592/3_VDL 591_VDL 590_VDL 587_VDL 588_VDL		
+J117	37.51541138	0.0040	ZMC8	;	PRVDL010 1039_VDL		
+J119	32.86210251	0.0019	ZMC8	;	024_VDL 025_VDL 025A_VDL 024A_VDL		
+J12	17.29390526			;			
+J120	35.81235123	0.0006	ZMC8	;	151_VDL 117_VDL 118_VDL 120_VDL 119_VDL		
+J121	37.30097198			;			
+J122	40.03393936			;			
+J123	22.05142403	0.0090	ZMC9	;	6_VDL PRVDL019 10_VDL		
+J124	35.28002548	0.0025	ZMC8	;	026_VDL 116_VDL		
+J125	35.28002548	0.0025	ZMC8	;	114_VDL 115_VDL PRVDL015		
+J127	36.80465698	0.0005	ZMC8	;	133_VDL 130_VDL 132_VDL 131_VDL		
+J129	37.18681335			;			
+J130	33.09659195	0.0048	ZMC8	;	63_VDL 64_VDL PRVDL018 65_VDL		
+J131	37.94651031	0.0029	ZMC8	;	1010_VDL 1011_VDL		
+J132	31.20223999	0.0013	ZMC8	;	61_VDL 023A_VDL 022A_VDL 46_VDL 45_VDL 44_VDL		
+J133	19.17752266	0.0129	ZMC9	;	001_VDL 002_VDL 016_VDL 015_VDL 004_VDL 003_VDL		
+J134	37.63344193			;			
+J135	36.12239075	0.0001	ZMC8	;	121_VDL 122_VDL		
+J137	31.84045792	0.0062	ZMC7	;	1168_VDL		
+J138	36.12239075	0.0036	ZMC8	;	PRVDL016		
+J139	26.03992844	0.0080	ZMC9	;	12_VDL 11A_VDL PRVDL020 11B_VDL		
+J141	33.28259659	0.0051	ZMC8	;	1078_VDL		
+J144	34.66495514	0.0003	ZMC8	;	111_VDL 112_VDL 113_VDL 68_VDL 67_VDL		
+J145	19.97637749			;			
+J146	26.6914978	0.0024	ZMC9	;	66_VDL 18_VDL 19_VDL 22_VDL 21_VDL		
+J147	36.4360466	0.0001	ZMC8	;	123_VDL		
+J148	37.41823578			;			
+J149	40.37737274	0.0002	ZMC8	;	141_VDL		
+J15	16.02973557	0.0129	ZMC7	;	1243_TRF 1244_TRF 1245_TRF 1246_TRF 1247_TRF 1248_TRF		
+J150	19.97637749			;			
+J151	42.81465149			;			
+J152	40.17358398	0.0004	ZMC8	;	140_VDL		
+J153	38.21159363	0.0001	ZMC8	;	129_VDL		
+J154	41.36099243	0.0600	ZMC7	;	1081_VDL 1082_VDL 1146_VDL		
+J156	29.68234634	0.0061	ZMC9	;	32_VDL 33_VDL 43_VDL		
+J157	26.56493568	0.0007	ZMC9	;	27_VDL 26_VDL		
+J158	21.29257393	0.0033	ZMC9	;	PRVDL022 3_VDL 2_VDL 1_VDL		
+J159	40.29857635			;			
+J16	16.90124321	0.0050	ZMC7	;	1231_TRF 1232_TRF		
+J160	28.43103981	0.0011	ZMC9	;	31_VDL 35_VDL 34_VDL		
+J161	36.42129135	0.0001	ZMC8	;	124_VDL		
+J162	36.21865463	0.0003	ZMC8	;	110_VDL 125_VDL 109_VDL		
+J163	23.16748619	0.0014	ZMC9	;	5_VDL 7_VDL		
+J164	20.61973572			;			
+J165	37.94641113	0.0004	ZMC8	;	127_VDL 128_VDL		
+J166	24.50730133	0.0009	ZMC9	;	23_VDL 14_VDL		
+J167	41.25999069	0.0409	ZMC7	;	1092_VDL 1090_VDL 1091_VDL		
+J168	40.16525269	0.0023	ZMC8	;	312/3_VDL 357_VDL		
+J169	38.876091	0.0391	ZMC7	;	1098_VDL 1093_VDL 1097_VDL		
+J170	21.06462479	0.0197	ZMC9	;	Lobito_Kids_Club		
+J171	24.42455864			;			
+J172	26.08356285	0.0012	ZMC9	;	28_VDL		
+J173	30.40245247			;			
+J174	20.86224937			;			
+J175	36.04575729	0.0002	ZMC8	;	108_VDL 126_VDL		
+J176	28.79298973	0.0013	ZMC9	;	41_VDL 49_VDL 54_VDL		
+J178	26.60924721	0.0013	ZMC9	;	37_VDL 36_VDL		
+J179	39.82383728	0.0139	ZMC8	;	358_VDL 355_VDL 356_VDL 360_VDL 359_VDL 362_VDL		
+J18	24.24285889	0.0011	ZMC8	;	1073_VDL		
+J181	30.63807106			;			
+J182	27.89259148	0.0017	ZMC9	;	39_VDL 40_VDL		
+J183	21.42030334	0.0113	ZMC9	;	PRVDL024 24_VDL 25_VDL		
+J184	28.27055359	0.0024	ZMC9	;	56_VDL 55_VDL		
+J185	27.35418129	0.0015	ZMC9	;	51_VDL 50_VDL		
+J186	22.91528511			;			
+J187	7.130795002	0.0208	ZMC9	;	Restaurante_Brezze Chuveiros_Praia PRVDL029		
+J188	34.327034	0.0003	ZMC8	;	83_VDL 106_VDL 107_VDL		
+J190	36.63249588	0.0001	ZMC8	;	100_VDL 101_VDL 102_VDL		
+J191	32.26732635	0.0007	ZMC8	;	69_VDL 81_VDL 71_VDL 82_VDL		
+J192	38.06010437	0.0022	ZMC8	;	103_VDL 319_VDL 320_VDL 321_VDL		
+J193	30.76832771	0.0009	ZMC8	;	60_VDL 62_VDL 59_VDL		
+J194	30.76832771	0.0002	ZMC8	;	73_VDL 72_VDL PRVDL017		
+J195	10.23920631	0.1257	ZMC9	;	Piscinas Teahouse_Oriental Boutique_Dunas PRVDL028 Restaurante_Montys		
+J196	33.27727127	0.0010	ZMC8	;	84_VDL 80_VDL 85_VDL 86_VDL PRVDL013		
+J197	11.51800919	0.0050	ZMC9	;	PRVDL025		
+J199	39.26818848	0.0214	ZMC8	;	Spa_VDL Piscina_do_Spa_VDL 361_VDL 617_VDL 616_VDL		
+J2	10.73060608	0.0063	ZMC7	;	1128_VDL		
+J200	30.40888977			;			
+J201	24.6547184	0.0007	ZMC9	;	38_VDL		
+J202	31.97145844	0.0525	ZMC7	;	1094_VDL 1096_VDL 1095_VDL		
+J203	28.75688553	0.0056	ZMC8	;	58_VDL PRVDL021		
+J205	32.38366318	0.0005	ZMC8	;	79_VDL 77_VDL 78_VDL 88_VDL 87_VDL		
+J207	34.80475998	0.0006	ZMC8	;	93_VDL 105_VDL 94_VDL 92_VDL 104_VDL 98_VDL 99_VDL		
+J208	30.784132	0.0002	ZMC8	;	76_VDL 74_VDL 75_VDL		
+J211	36.61554337			;			
+J212	29.13322449			;			
+J215	26.44433403	0.0013	ZMC9	;	52_VDL		
+J216	27.08275223			;			
+J218	15.35593033	0.0134	ZMC9	;	Mini_Golf		
+J219	39.70292664	0.0043	ZMC8	;	354_VDL 314_VDL		
+J220	45.48649597			;			
+J221	45.48649597	0.0018	ZMC8	;	PRVDL178		
+J222	34.45186234	0.0004	ZMC8	;	89_VDL 96_VDL 90_VDL 91_VDL 97_VDL		
+J225	15.02331448	0.0000	ZMC9	;	PRVDL027		
+J227	28.34655952			;			
+J228	19.97006798	0.0000	ZMC9	;	PRVDL026		
+J229	28.34655952			;			
+J230	28.82292557			;			
+J234	9.133234024	0.0633	ZMC9	;	PLATAFORMA_PRAIA Sandbanks Creperie PRVDL030 Gecko Praca_VDL Beach_Bar		
+J236	35.31584167	0.0012	ZMC8	;	95_VDL 318_VDL 317_VDL		
+J237	10.25835323	0.0311	ZMC9	;	Escritorio_Shelsian Restaurante_Amore Rest_Cantina_Lobo		
+J239	37.87092972	0.0016	ZMC8	;	316_VDL 315_VDL		
+J240	30.25231934	0.2335	ZMC9	;	Hotel_D._Filipa		
+J241	34.48946762	0.0058	ZMC8	;	303_VDL 304_VDL		
+J242	41.14123917	0.0035	ZMC8	;	351_VDL 1002_VDL 1003_VDL 1001_VDL		
+J243	29.0154171			;			
+J244	41.36788559	0.0026	ZMC8	;	Restaurante_Spikes Auditorio_VDL		
+J247	45.4409523			;			
+J250	10			;			
+J251	10	0.0236	ZMC9	;	431_VDL PRVDL032 430_VDL 429_VDL		
+J253	25.91059494			;			
+J254	36.18782425	0.0084	ZMC8	;	305_VDL 307_VDL 306_VDL		
+J255	41.32447433			;			
+J256	41.01618195	0.0007	ZMC8	;	VDL_Shopping		
+J257	45.30688095			;			
+J258	6.982899189	0.0236	ZMC9	;	423_VDL 424_VDL 425_VDL 426_VDL 427_VDL 428_VDL		
+J259	45.30688095	0.0011	ZMC8	;	PRVDL175		
+J26	17.93164444	0.0356	ZMC7	;	1241_TRF 1230_TRF 1234_TRF 1229_TRF 1225_TRF 1240_TRF 1235_TRF PRVDL208 1236_TRF 1239_TRF 1228_TRF 1226_TRF 1237_TRF 1238_TRF 1227_TRF		
+J262	33.60600662			;			
+J267	35.88622284			;			
+J268	40.51236725	0.0061	ZMC8	;	502_VDL 501_VDL 311_VDL		
+J270	27.78391266	0.0023	ZMC8	;	196_VDL PRVDL177 197_VDL 199_VDL 198_VDL		
+J271	41.0593071	0.0091	ZMC8	;	308_VDL 352_VDL 309_VDL 353_VDL PRVDL006		
+J272	37.53430176	0.0022	ZMC8	;	202_VDL PRVDL170		
+J273	36.45464325	0.0022	ZMC8	;	1006_VDL 206/7_VDL		
+J275	7.102784157	0.0086	ZMC9	;	432_VDL 433_VDL 434_VDL		
+J277	41.77944183			;			
+J279	37.86004639			;			
+J28	20.10536003	0.0097	ZMC8	;	1072_VDL 1071_VDL 1070_VDL 1069_VDL 1018_VDL		
+J282	41.77944183	0.0093	ZMC8	;	Oficina_VDL PRVDL171 Administracao_VDL 212_VDL 210_VDL PRVDL173 211_VDL		
+J283	40.84597015	0.0005	ZMC8	;	310_VDL		
+J287	39.82630157	0.0018	ZMC8	;	Governantas_VDL PRVDL212		
+J293	7.150640488	0.0206	ZMC9	;	436_VDL 435_VDL PRVDL034		
+J296	38.59047699			;			
+J297	38.59047699			;			
+J298	9.192276955	0.0104	ZMC9	;	439_VDL 437_VDL 438_VDL		
+J299	40.02119064			;			
+J300	40.02119064			;			
+J301	8.898928642			;			
+J302	11.68138981	0.0037	ZMC9	;	440_VDL		
+J303	37.54709244	0.0075	ZMC8	;	200/1_VDL 203_VDL 208/9_VDL PRVDL169 205_VDL		
+J304	12.49512005	0.0051	ZMC9	;	441_VDL		
+J305	34.43797684	0.0116	ZMC8	;	173/3A_VDL PRVDL167 185_VDL 184_VDL PRVDL166 180_VDL 174_VDL 176_VDL 177_VDL 182/3_VDL 178_VDL 179_VDL PRVDL164 175/6_VDL 181_VDL 176A_VDL		
+J306	13.62298679	0.0074	ZMC9	;	442_VDL 443_VDL		
+J307	14.60277176	0.0058	ZMC9	;	445_VDL 444_VDL		
+J309	30.72969246			;			
+J31	26.92234993			;			
+J310	40.50515366			;			
+J311	13.08380699			;			
+J312	15.99271774	0.0041	ZMC9	;	446_VDL 447_VDL		
+J313	14.38028908			;			
+J315	17.94097519	0.0092	ZMC9	;	448_VDL		
+J317	18.79686737			;			
+J326	33.506073	0.0052	ZMC8	;	412_VDL 398_VDL 414_VDL 413_VDL 399_VDL		
+J329	37.01777649			;			
+J33	25.80233955			;			
+J331	31.74524689	0.0043	ZMC8	;	4_QUA 2_QUA 1_QUA		
+J332	31.74524689	0.0033	ZMC8	;	195_VDL 194_VDL 193_VDL 191_VDL 192_VDL		
+J334	23.77254486	0.0043	ZMC8	;	490_VDL 491_VDL 493_VDL 492_VDL		
+J336	12.38318348	0.0246	ZMC9	;	386_VDL 385_VDL 387_VDL		
+J340	32.62655258	0.0079	ZMC8	;	519_VDL 521_VDL 522_VDL 523_VDL		
+J343	29.49068451	0.0040	ZMC8	;	527_VDL 524/5_VDL 526_VDL Central_de_Seguranca PRVDL161		
+J344	14.65461636	0.0522	ZMC9	;	384_VDL 389_VDL 383_VDL		
+J345	31.44434166	0.0063	ZMC8	;	20_QUA 19_QUA 190_VDL 30_QUA 18_QUA 26_QUA PRQUA003		
+J346	37.2802887	0.0057	ZMC8	;	15/14_QUA Tenis_QUA J_G_Bar 5_QUA 8_QUA_B1 6_QUA_B1 7_QUA_B1 PRQUA004 3_QUA_B1 4_QUA_B1 5_QUA_B1		
+J347	38.73703003	0.0004	ZMC8	;	9_QUA_B1 2_QUA_B1 11_QUA_B2 1_QUA_B1		
+J348	16.8153019	0.0023	ZMC8	;	620_VDL 619_VDL 618_VDL		
+J349	27.66049767	0.0009	ZMC8	;	470/94_VDL 472_VDL 475_VDL		
+J351	23.40888596	0.0033	ZMC8	;	PRVDL162 392/3/4_VDL		
+J353	38.61081314	0.0047	ZMC8	;	530_VDL 529_VDL 532_VDL 533_VDL		
+J356	36.95834732	0.0017	ZMC8	;	531_VDL PRVDL160		
+J357	36.52262497	0.0078	ZMC8	;	PRVDL165 186_VDL 171/2_VDL 170_VDL 187_VDL 188_VDL 169_VDL 189_VDL PRVDL163 168_VDL PRVDL168 167_VDL		
+J358	36.55767059	0.0013	ZMC8	;	528_VDL		
+J359	39.58224106	0.0169	ZMC8	;	538/9_VDL 543_VDL 536_VDL 513_VDL 514_VDL 537_VDL 540_VDL 516_VDL 515_VDL 542_VDL		
+J36	24.7868042	0.0048	ZMC8	;	1017_VDL 1019_VDL		
+J362	34.36418915	0.0065	ZMC8	;	374_VDL 370_VDL 373_VDL 372_VDL		
+J363	37.65255356	0.0069	ZMC8	;	29_QUA 35_QUA 34_QUA 27_QUA 28_QUA		
+J365	41.45389557	0.0082	ZMC8	;	17_QUA 21_QUA 16_QUA 22_QUA 45_QUA 46_QUA		
+J366	40.34479141	0.0036	ZMC8	;	535_VDL 534_VDL PRVDL159		
+J367	41.59235001	0.0015	ZMC8	;	35_QUA_JG 15_QUA_JG 14_QUA_JG 22_QUA_JG 36_QUA_JG 23_QUA_JG 40_QUA_JG 17_QUA_JG 16_QUA_JG 20_QUA_JG 37_QUA_JG 39_QUA_JG 21_QUA_JG 18_QUA_JG 19_QUA_JG 38_QUA_JG PRQUA001		
+J368	42.39445877	0.0140	ZMC8	;	6_QUA_GJ 7_QUA_GJ 4_QUA_GJ 7_QUA_JG 3_QUA_GJ 2_QUA_GJ 8_QUA_JG 6_QUA_JG 5_QUA_GJ Condominio_JG PRQUA002 33_QUA_JG 32_QUA_JG		
+J370	30.59033585	0.0010	ZMC8	;	459_VDL 463_VDL 461_VDL		
+J371	15.31520844			;			
+J373	14.04430771			;			
+J374	21.49989891	0.0042	ZMC8	;	375_VDL 379/80_VDL 376_VDL 377/8_VDL		
+J375	38.0108223	0.0055	ZMC8	;	31_QUA 36_QUA 32_QUA 23_QUA 37_QUA		
+J376	40.67437744	0.0053	ZMC8	;	47_QUA Restaurante_Paixa 24_QUA 25_QUA		
+J379	37.47036362			;			
+J38	25.74571037	0.0295	ZMC7	;	1129_VDL 1161_VDL 1130_VDL 1131_VDL		
+J380	37.47036362	0.0016	ZMC8	;	38_QUA		
+J381	43.30683517	0.0030	ZMC8	;	510_VDL 511_VDL		
+J383	45.95026016	0.0039	ZMC8	;	17_QUA_GJ 18_QUA_GJ 44_QUA		
+J385	29.69800186	0.0028	ZMC8	;	457_VDL 453/5_VDL 454/6/8/62/623_VDL		
+J386	40.24309921	0.0132	ZMC8	;	553_VDL 554_VDL 555_VDL 556_VDL 557_VDL 544_VDL 512_VDL		
+J387	41.58292389	0.0043	ZMC8	;	40_QUA 39_QUA		
+J388	29.10565186	0.0121	ZMC8	;	581_VDL 615_VDL 602_VDL 579/80_VDL 606_VDL 605_VDL 603_VDL 604_VDL		
+J390	41.58452225	0.0030	ZMC8	;	563_VDL PRVDL004		
+J393	27.7759304	0.0034	ZMC8	;	449_VDL 450_VDL 451_VDL		
+J395	46.55376816	0.0175	ZMC8	;	Condominio_P._Benta 1_QUA_GJ		
+J397	27.13288689	0.0073	ZMC8	;	784_VDL PRVDL085 780_VDL 783_VDL 782_VDL 781_VDL		
+J399	29.36502457	0.0052	ZMC8	;	629_VDL 631_VDL		
+J4	15.4437809			;			
+J40	17.56970978	0.0166	ZMC7	;	1233_TRF 1224_TRF 1222/3_TRF PRVDL204 PRVDL207		
+J400	29.29312515	0.0005	ZMC8	;	758_VDL 757_VDL 756_VDL PRVDL082		
+J401	30.17172432	0.0037	ZMC8	;	763_VDL 764_VDL PRVDL084		
+J402	30.57551193	0.0035	ZMC8	;	PRVDL083 760_VDL 761_VDL 762_VDL		
+J403	37.41648483	0.0036	ZMC8	;	558_VDL 562_VDL 559_VDL		
+J404	28.14668274	0.0031	ZMC8	;	785_VDL		
+J405	23.11651039	0.0006	ZMC8	;	WC_Golf_16 788_VDL 789_VDL 790_VDL PRVDL087		
+J406	30.34239006	0.0006	ZMC8	;	765_VDL		
+J407	29.96479225			;			
+J408	28.59052849	0.0038	ZMC8	;	751_VDL 750_VDL PRVDL081		
+J409	32.27957153	0.0111	ZMC8	;	582_VDL 583_VDL 607_VDL 608/9_VDL 586_VDL 584_VDL 594/5_VDL 585_VDL		
+J41	18.26761436	0.0057	ZMC8	;	1074_VDL 1075_VDL 1077_VDL 1076_VDL		
+J410	35.87132263	0.0036	ZMC8	;	561_VDL 560_VDL		
+J411	28.91640282	0.0032	ZMC8	;	PRVDL044 738_VDL 739_VDL PRVDL078		
+J412	30.11906242	0.0018	ZMC8	;	PRVDL042 728B_VDL PRVDL043 728A_VDL		
+J413	30.55243111			;			
+J414	30.55243111	0.0005	ZMC8	;	775_VDL 774_VDL		
+J415	31.02236176	0.0037	ZMC8	;	759_VDL 773_VDL PRVDL089		
+J416	29.4245224			;			
+J417	20.27250862	0.0016	ZMC8	;	786_VDL PRVDL086 787_VDL		
+J419	38.86994934			;			
+J42	30.12158966	0.0032	ZMC8	;	1030_VDL 1031_VDL		
+J420	45.86796951			;			
+J421	18.67188644	0.0082	ZMC8	;	600_VDL 614_VDL 601_VDL 613_VDL		
+J422	30	0.0002	ZMC8	;	752_VDL 753_VDL		
+J423	31.4922924	0.0002	ZMC8	;	772_VDL		
+J424	29.60662079	0.0002	ZMC8	;	742_VDL		
+J425	29.10280037	0.0003	ZMC8	;	741_VDL 740_VDL		
+J426	30			;			
+J427	29.82881927	0.0019	ZMC8	;	748_VDL 749_VDL PRVDL080		
+J428	30.53778076	0.0022	ZMC8	;	727/8_VDL PRVDL075 733_VDL		
+J429	29.48846817			;			
+J431	31.63891411	0.0002	ZMC8	;	771_VDL		
+J432	31.37845421	0.0022	ZMC8	;	770_VDL 768_VDL 769_VDL PRVDL088		
+J433	30.91689491	0.0002	ZMC8	;	754_VDL		
+J434	29.17280006	0.0003	ZMC8	;	747_VDL PRVDL079		
+J435	30.01943207			;			
+J437	30.91366005			;			
+J438	30.91366005	0.0007	ZMC8	;	776_VDL 777_VDL 755_VDL		
+J44	30	0.0004	ZMC8	;	1028/9_VDL		
+J441	29.36246109			;			
+J442	30.2709198	0.0002	ZMC8	;	767_VDL 766_VDL		
+J443	29.36246109	0.0002	ZMC8	;	746_VDL		
+J444	29.36246109			;			
+J445	29.36246109			;			
+J446	27.36727905	0.0029	ZMC8	;	597_VDL 596_VDL		
+J447	31.18186569			;			
+J449	29.82409286	0.0038	ZMC8	;	737_VDL 736_VDL PRVDL077		
+J45	27.30817986	0.0051	ZMC8	;	1047_VDL 1049_VDL 1048_VDL		
+J450	30.25405884	0.0002	ZMC8	;	731_VDL		
+J453	16.25793266	0.0025	ZMC8	;	PRVDL152		
+J454	30.96339417			;			
+J457	31.27873611	0.0003	ZMC8	;	723_VDL 724_VDL 732_VDL		
+J458	31.24366188			;			
+J459	31.24366188			;			
+J460	31.1644268			;			
+J461	29.91093063			;			
+J462	45.35529327	0.0000	ZMC8	;	PRVDL001		
+J463	29.91093063	0.0004	ZMC8	;	734_VDL		
+J464	29.62610245	0.0002	ZMC8	;	735_VDL		
+J465	31.20349121	0.0018	ZMC8	;	Casa_Yanina		
+J466	44.46354294	0.0050	ZMC8	;	PRVDL003		
+J467	31.27577591	0.0001	ZMC8	;	730_VDL 729_VDL		
+J468	32.02453232	0.0072	ZMC8	;	632_VDL PRVDL041		
+J469	29.62610245	0.0006	ZMC8	;	745_VDL 743_VDL 744_VDL		
+J47	17.44466591	0.0019	ZMC7	;	1219_TRF 1220_TRF		
+J471	31.91573906	0.0001	ZMC8	;	725_VDL 726_VDL		
+J474	30.36779022	0.0037	ZMC8	;	PRVDL090		
+J476	21.54170036	0.0084	ZMC8	;	634_VDL 636_VDL		
+J478	29.73177147			;			
+J479	22.24642754	0.0042	ZMC8	;	635_VDL		
+J480	29.65812492	0.0017	ZMC8	;	PRVDL076		
+J481	44.01590729	0.0064	ZMC8	;	PRVDL002 Centro_Medico		
+J483	29.41138649			;			
+J485	22.89529419			;			
+J486	30.14488792			;			
+J488	28.99471664			;			
+J489	35.92713547	0.0021	ZMC8	;	693_VDL 692_VDL		
+J491	28.87067795			;			
+J493	31.83485794			;			
+J494	28.40458679	0.0022	ZMC8	;	13_EL 3_EL 2_EL 1_EL		
+J498	34.87201309	0.0014	ZMC8	;	590E_VDL		
+J499	28.98143578	0.0048	ZMC8	;	640_VDL 638_VDL 639_VDL PRVDL155		
+J5	11.96783924			;			
+J500	34.87201309			;			
+J501	43.24070358	0.0011	ZMC8	;	Pingo_Doce		
+J502	24.68259621	0.0033	ZMC8	;	637A_VDL PRVDL156 645A_VDL PRVDL153 645B_VDL PRVDL157		
+J503	31.4584465	0.0042	ZMC8	;	633_VDL 716_VDL 718_VDL		
+J504	25.5132637	0.0068	ZMC8	;	651_VDL 635B_VDL 637B_VDL PRVDL154		
+J506	34.05460739	0.0005	ZMC8	;	659_VDL		
+J509	44.76509094			;			
+J510	33.20413589			;			
+J512	33.20413589			;			
+J513	44.76509094			;			
+J514	30.39472771			;			
+J516	31.19284248	0.0012	ZMC8	;	714_VDL		
+J517	31.19284248	0.0031	ZMC8	;	712_VDL		
+J52	27.52822113	0.0044	ZMC8	;	1044_VDL 1050_VDL 1052/52A_VDL 1051_VDL		
+J524	45.45477295	0.0037	ZMC8	;	PRVDL190		
+J525	26.77222824			;			
+J527	27.96021461	0.0057	ZMC8	;	641_VDL 641A/643_VDL 642_VDL 644_VDL		
+J528	30	0.0009	ZMC8	;	691_VDL		
+J532	30	0.0015	ZMC8	;	660_VDL 661_VDL		
+J534	33.65928268			;			
+J535	30	0.0032	ZMC8	;	715_VDL 717_VDL		
+J537	30	0.0011	ZMC8	;	690_VDL		
+J539	32.0692482	0.0041	ZMC8	;	710_VDL 708_VDL		
+J54	23.89689255	0.0647	ZMC7	;	1115_VDL 1114_VDL 1113_VDL 1105_VDL 1112_VDL		
+J540	30			;			
+J541	28.40299225	0.0012	ZMC8	;	719_VDL 721_VDL 722_VDL 720_VDL		
+J547	29.38732529	0.0033	ZMC8	;	689_VDL 664_VDL		
+J548	32.11993408	0.0021	ZMC8	;	702_VDL 709_VDL		
+J55	29.87814713	0.0729	ZMC7	;	1116_VDL 1111_VDL 1117_VDL 1109_VDL 1118_VDL 1110_VDL		
+J550	22.63757706	0.0040	ZMC8	;	6_EL		
+J553	27.31966209	0.0030	ZMC8	;	688_VDL 687_VDL 686_VDL		
+J554	27.18852234			;			
+J555	20.35997581	0.0006	ZMC8	;	Sportive_Club 648_VDL		
+J556	25.27425766			;			
+J558	32.41172028	0.0021	ZMC8	;	665_VDL 662_VDL		
+J559	31.06236839	0.0027	ZMC8	;	707_VDL		
+J56	29.88191795	0.0196	ZMC7	;	1119_VDL 1120_VDL		
+J560	24.01655388	0.0013	ZMC8	;	685_VDL		
+J561	25.40490723			;			
+J562	25.40490723	0.0008	ZMC8	;	684_VDL		
+J564	31.79211617	0.0003	ZMC8	;	713_VDL		
+J565	25.40490723			;			
+J566	25.40490723			;			
+J569	24.56521034	0.0016	ZMC8	;	682_VDL		
+J572	31.14696884			;			
+J574	34.48734283	0.0010	ZMC8	;	653_VDL 654B_VDL 654/654A_VDL		
+J575	20.45374298			;			
+J578	33.05410385	0.0050	ZMC8	;	652_VDL 635C_VDL PRVDL045		
+J579	21.86744308			;			
+J58	31.45354843	0.0452	ZMC7	;	1153_VDL 1149_VDL 1150_VDL 1151_VDL		
+J580	22.13969994			;			
+J581	22.19292068			;			
+J582	23.6176548			;			
+J583	23.52877235			;			
+J585	34.63055801			;			
+J588	34.63055801	0.0034	ZMC8	;	PRVDL046 655_VDL		
+J589	26.44375229	0.0004	ZMC8	;	683_VDL		
+J590	26.89918327	0.0033	ZMC8	;	667_VDL 666_VDL		
+J592	32.86396408			;			
+J593	29.9761982	0.0014	ZMC8	;	700_VDL 818/9_VDL		
+J594	29.9761982			;			
+J595	30			;			
+J596	28.41377449	0.0007	ZMC8	;	806_VDL 803_VDL 805_VDL 804_VDL		
+J597	34.27579498	0.0032	ZMC8	;	655A_VDL 656_VDL PRVDL047		
+J598	32.89719772			;			
+J60	19.29816246	0.0017	ZMC7	;	Casa_de_Madeira 1211_TRF		
+J601	28.63701057			;			
+J602	23.81876755			;			
+J603	30			;			
+J605	24.46954918	0.0008	ZMC8	;	681_VDL		
+J606	30.85876083	0.0019	ZMC8	;	698_VDL 826_VDL		
+J608	26.03686905	0.0055	ZMC8	;	680_VDL		
+J61	33.81686783	0.0271	ZMC7	;	1123_VDL 1121_VDL 1122_VDL		
+J610	26.03686905			;			
+J614	29.99799347	0.0007	ZMC8	;	821_VDL 822_VDL 823_VDL		
+J616	29.40345573	0.0007	ZMC8	;	814_VDL 820_VDL 817_VDL 813_VDL		
+J620	35.23789215	0.0038	ZMC8	;	837_VDL 841_VDL PRVDL048 840_VDL 838_VDL 839_VDL		
+J621	32.25168991	0.0042	ZMC8	;	827_VDL 828_VDL 830_VDL 829_VDL		
+J622	35.37217712	0.0012	ZMC8	;	836_VDL 832_VDL 835_VDL 833_VDL 834_VDL		
+J625	34.1158638	0.0003	ZMC8	;	831_VDL		
+J627	29.04603958	0.0001	ZMC8	;	810_VDL		
+J63	34.43093109	0.0024	ZMC8	;	1036_VDL 1032_VDL 1027_VDL		
+J631	34.33288956			;			
+J633	30.67084885	0.0015	ZMC8	;	872_VDL 870_VDL 871_VDL 824_VDL 825_VDL		
+J634	29.29213524	0.0001	ZMC8	;	816_VDL		
+J635	29.28431511	0.0003	ZMC8	;	811_VDL		
+J636	29.28431511	0.0001	ZMC8	;	815_VDL		
+J637	34.70724869	0.0032	ZMC8	;	PRVDL051 857_VDL 854_VDL 856_VDL 855_VDL		
+J638	35.00435638	0.0034	ZMC8	;	PRVDL049 861_VDL 858_VDL 860_VDL 859_VDL		
+J639	29.29213524	0.0001	ZMC8	;	873_VDL		
+J64	32.90335083	0.0498	ZMC7	;	1132_VDL 1132A_VDL		
+J640	24.69292259	0.0001	ZMC8	;	PRVDL142		
+J642	29.29213524	0.0002	ZMC8	;	812_VDL		
+J644	24.71474648	0.0008	ZMC8	;	679_VDL		
+J645	29.50652313			;			
+J646	25.55884171			;			
+J649	29.50652313	0.0005	ZMC8	;	807_VDL 808_VDL 809_VDL		
+J652	25.54753685			;			
+J653	25.54753685			;			
+J654	25.54753685	0.0008	ZMC8	;	669_VDL		
+J658	34.29513168	0.0005	ZMC8	;	862_VDL 864_VDL 863_VDL		
+J659	26.71298409	0.0022	ZMC8	;	671_VDL 678_VDL		
+J664	27.19203758	0.0017	ZMC8	;	668_VDL 670_VDL		
+J667	35.53837204	0.0039	ZMC8	;	844_VDL 845_VDL PRVDL052 846_VDL		
+J668	29.79473114	0.0053	ZMC8	;	890_VDL 889_VDL PRVDL055		
+J670	32.81825256	0.0008	ZMC8	;	47_EL 32_EL 46_EL		
+J672	35.44145966	0.0094	ZMC8	;	PRVDL053 PRVDL050 853_VDL 847_VDL 852_VDL 848_VDL 851_VDL 849_VDL 850_VDL		
+J673	34.06749344	0.0008	ZMC8	;	865_VDL		
+J674	31.43339157	0.0007	ZMC8	;	891_VDL		
+J68	27.00009537	0.0022	ZMC8	;	1061_VDL 1053_VDL		
+J680	30.30965233			;			
+J684	33.07984161	0.0011	ZMC8	;	887_VDL 866_VDL 886_VDL 885_VDL		
+J687	29.81318855	0.0006	ZMC8	;	888_VDL 920_VDL		
+J688	29.59617996	0.0001	ZMC8	;	921_VDL		
+J69	20.08122253	0.0038	ZMC7	;	1213_TRF 1214_TRF 1215_TRF		
+J690	30.65693474	0.0018	ZMC8	;	869_VDL 881_VDL 867_VDL 884_VDL 882_VDL 868_VDL 883_VDL		
+J692	29.08221245	0.0001	ZMC8	;	922_VDL		
+J695	31.58722496	0.0003	ZMC8	;	892_VDL		
+J697	30.43803596			;			
+J7	17.45675468	0.0037	ZMC8	;	1064_VDL 1068_VDL 1065_VDL		
+J700	31.58722496	0.0037	ZMC8	;	PRVDL054 893_VDL		
+J707	31.36128235			;			
+J709	31.36128235	0.0009	ZMC8	;	677_VDL		
+J71	27.46300316	0.0467	ZMC7	;	1107_VDL 1100_VDL 1104_VDL 1106_VDL		
+J710	29.93412971	0.0021	ZMC8	;	874/5_VDL 876_VDL 877_VDL 878_VDL		
+J715	32.78668976	0.0028	ZMC8	;	43_EL 44_EL		
+J720	33.3288765	0.0016	ZMC8	;	36_EL 35_EL		
+J725	31.91871262			;			
+J728	33.03886795	0.0009	ZMC8	;	676_VDL 675_VDL		
+J729	30			;			
+J73	30.22282219	0.0008	ZMC8	;	1043_VDL		
+J731	29.877491			;			
+J733	34.76958084	0.0016	ZMC8	;	673_VDL 674_VDL		
+J734	30			;			
+J74	36.82034302	0.0470	ZMC7	;	1083_VDL 1148_VDL		
+J742	29.87639427			;			
+J743	29.87639427	0.0008	ZMC8	;	880_VDL 879_VDL 879A_VDL		
+J744	37.33456039			;			
+J747	29.88175011	0.0002	ZMC8	;	879B_VDL		
+J750	38.61039352			;			
+J754	30.28689384	0.0011	ZMC8	;	895_VDL 894_VDL		
+J756	39.40473175			;			
+J762	28.12084198	0.0002	ZMC8	;	897_VDL 896_VDL		
+J764	37.12493134	0.0007	ZMC8	;	672_VDL		
+J767	40			;			
+J77	30.02600288			;			
+J771	25.35032082	0.0097	ZMC8	;	919_VDL 918_VDL 899_VDL 898_VDL 923_VDL 924_VDL PRVDL102 927B_VDL 927_VDL PRVDL101 925_VDL 926_VDL		
+J772	22.62885857	0.0003	ZMC8	;	932_VDL 933_VDL 934_VDL		
+J773	36.72719193			;			
+J774	36.72719193			;			
+J775	35.70590973	0.0000	ZMC8	;	PRVDL192		
+J776	20	0.0004	ZMC8	;	936_VDL 935_VDL		
+J777	35.70590973			;			
+J778	20			;			
+J779	37.05134964			;			
+J782	37.05134964			;			
+J784	41.58904266			;			
+J785	34.07673264	0.0016	ZMC8	;	35B.14_VDLIII		
+J787	38.40803146			;			
+J791	32.31352615	0.0019	ZMC8	;	37_EL 41_EL 42_EL		
+J792	36.72719193			;			
+J794	19.89622688	0.0007	ZMC8	;	939_VDL 937_VDL 938_VDL		
+J795	23.50076485	0.0020	ZMC8	;	931_VDL 930_VDL 911_VDL 929_VDL 917_VDL 928_VDL 916_VDL 912_VDL 913_VDL 915_VDL 914_VDL		
+J798	38.93528748			;			
+J799	38.93528748	0.0026	ZMC8	;	35B.33_VDLIII		
+J8	14.15393162			;			
+J80	9.874103546			;			
+J802	35.87461472			;			
+J806	34.75032043	0.0016	ZMC8	;	35B.15_VDLIII		
+J81	35.30418015	0.0031	ZMC8	;	1037_VDL 1026_VDL		
+J810	34.75032043			;			
+J812	44.40734863			;			
+J815	19.8246994			;			
+J816	19.8246994			;			
+J82	24.52207184	0.0022	ZMC8	;	PRVDL023 007_VDL 008_VDL		
+J820	35.99463272			;			
+J825	35.99463272			;			
+J827	43.63223267			;			
+J83	37.92725372	0.0128	ZMC7	;	1088_VDL		
+J831	31.00205803			;			
+J834	30.61113167			;			
+J836	43.87978363			;			
+J838	37.85207367			;			
+J84	26.5487957	0.0008	ZMC8	;	012_VDL 011_VDL		
+J841	20.36375427	0.0098	ZMC8	;	900_VDL 901_VDL 905/5A_VDL 908_VDL 904_VDL 909_VDL 903_VDL PRVDL096 902_VDL LAGO_FLAMINGOS PRVDL099		
+J848	42.21754837	0.0007	ZMC8	;	PRVDL189		
+J849	42.21754837			;			
+J85	31.11512947	0.0006	ZMC8	;	161_VDL 160_VDL 157_VDL 159_VDL 158_VDL		
+J851	42.21754837			;			
+J852	19.67124748	0.0007	ZMC8	;	910_VDL 907_VDL 906_VDL		
+J854	25.96337318	0.0062	ZMC8	;	12_FV 11_FV 10_FV 6_FV 7_FV 8_FV 9_FV 2B_FV 1B_FV 13B_FV 1A_FV 2A_FV 5_FV 13A_FV 3_FV		
+J855	19.54180336	0.0051	ZMC8	;	PRVDL097		
+J856	21.14957809			;			
+J858	19.69789696			;			
+J86	30.17678642	0.0038	ZMC8	;	PRVDL011 1025_VDL 1023_VDL 1024_VDL 1013_VDL		
+J860	19.93304443	0.0028	ZMC8	;	953_VDL PRVDL103 952_VDL 950_VDL		
+J861	42.61923599	0.0000	ZMC8	;	PRVDL193		
+J868	26.88124657	0.0015	ZMC8	;	943_VDL 944_VDL 946_VDL 945_VDL		
+J869	43.39748764			;			
+J87	38.63244629	0.0084	ZMC8	;	1033_VDL 1034_VDL 1042A_VDL 1035_VDL 1041_VDL 1042/1045_VDL		
+J870	43.39748764			;			
+J872	43.55340576			;			
+J873	27.00937271	0.0002	ZMC8	;	947_VDL		
+J874	29.26225471	0.0007	ZMC8	;	942_VDL 941_VDL		
+J875	27.00937271	0.0007	ZMC8	;	949_VDL 949A_VDL		
+J878	36.28262329	0.0010	ZMC8	;	37.12/37.24_VDLIII		
+J882	43.89655304			;			
+J889	43.71958923			;			
+J891	43.71958923			;			
+J895	37.00492096	0.0012	ZMC8	;	37.10/37.11_VDLIII		
+J898	37.00492096			;			
+J899	43.71958923			;			
+J90	37.79129791	0.0125	ZMC7	;	1126_VDL 1084_VDL		
+J901	25.41130257	0.0087	ZMC8	;	959_VDL 954_VDL PRVDL105 955_VDL 956_VDL 957/8_VDL PRVDL104		
+J902	43.71958923	0.0011	ZMC8	;	PRVDL194		
+J903	43.74014664			;			
+J904	43.74014664			;			
+J909	43.53490448			;			
+J91	37.10937119	0.0212	ZMC7	;	PRVDL176 1125_VDL 1124_VDL		
+J910	26.65992737	0.0008	ZMC8	;	940_VDL		
+J913	42.55657578	0.0001	ZMC8	;	Escritorio_J_Hammond		
+J915	26.65992737			;			
+J916	25.08642769			;			
+J922	41.62244797			;			
+J923	41.5438118			;			
+J926	41.62244797			;			
+J928	26.84128571	0.0022	ZMC8	;	PRVDL124 PRVDL112		
+J930	37.75730515			;			
+J932	19.35246086			;			
+J933	21.99171638	0.0011	ZMC8	;	972_VDL 971_VDL 989_VDL		
+J935	38.28151703			;			
+J936	38.28151703			;			
+J940	38.68387604	0.0000	ZMC8	;	PRVDL195		
+J943	41.58076477			;			
+J944	41.58076477			;			
+J948	39.36582184			;			
+J949	24.76918983	0.0012	ZMC8	;	988_VDL 987_VDL		
+J954	26.64180374	0.0011	ZMC8	;	984_VDL 986_VDL 985_VDL		
+J955	39.54335022			;			
+J958	39.81704712			;			
+J959	39.81704712			;			
+J96	28.47805786	0.0040	ZMC8	;	017_VDL 017A_VDL		
+J967	39.43150711			;			
+J968	39.43150711			;			
+J970	39.43150711			;			
+J971	23.55295372	0.0011	ZMC8	;	Casa_do_Rei 973_VDL 974_VDL		
+J976	21.61436844	0.0039	ZMC8	;	PRVDL119 978_VDL 977_VDL 975_VDL 983_VDL 976_VDL		
+J982	30			;			
+J983	30			;			
+J984	38.80098343			;			
+J985	38.80098343			;			
+J986	16.09361649	0.0007	ZMC8	;	Estrela_Meio_Dia Casa_Miradouro 982_VDL		
+J987	36.08427048	0.0000	ZMC8	;	PRVDL197		
+J988	13.29393291			;			
+J990	40			;			
+J991	40			;			
+J992	40			;			
+J996	40	0.0000	ZMC8	;	PRVDL196		
+J999	44.88871002	0.0017	ZMC8	;	PRVDL187 LAGO_ROYAL Edificio_Cafe		
+PU928_Dis	14.28838539	0.0307	ZMC9	;	499_VDL 381_VDL 391_VDL		
+PU928_Suc	14.28838539	0.0113	ZMC9	;	500_VDL		
+PU929_Dis	30	0.0027	ZMC8	;	020_VDL 022_VDL		
+PU929_Suc	30	0.0019	ZMC8	;	021/023_VDL		
+PU930_Dis	30.10257912			;			
+PU930_Suc	30.31639671	0.0018	ZMC9	;	48_VDL 47_VDL		
+PU933_Dis	28.03227615	0.0001	ZMC9	;	57_VDL		
+PU933_Suc	28.03227615	0.0036	ZMC9	;	53_VDL		
+V919_Dw	8.792980194			;			
+V919_Up	8.792980194	0.0006	ZMC8	;	495_VDL		
+V920_Dw	20.01537323			;			
+V920_Up	20.01537323			;			
+V921_Dw	31.05600357	0.0074	ZMC8	;	PRVDL012 302N_VDL 301_VDL		
+V921_Up	31.05600357			;			
+V922_Dw	29.48473358			;			
+V922_Up	29.48473358			;			
+V923_Dw	20.01537323			;			
+V923_Up	20.01537323			;			
+V924_Up	45.4409523			;			
+V925_Up	45.4409523			;			
+V926_Dw	33.98746872	0.0038	ZMC8	;	409_VDL 410_VDL 411_VDL		
+V926_Up	33.98746872			;			
+V927_Dw	45.4409523			;			
+V927_Up	45.4409523			;			
+
+
 [RESERVOIRS]
 ;ID                             	Head                	Pattern             
 Gravitica                      	48                  	                    	;
