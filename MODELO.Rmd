@@ -116,7 +116,6 @@ library(data.table)
 DT <- data.table(df)
 DT<-DT[,BaseDem:=sum(pesoVerao, na.rm=TRUE), by=c("Id","ZMC")]
 DT<-DT[, Codigos:=paste0(CodigoLoca, collapse = " "), by=c("Id", "ZMC")]
-
 write.csv(DT, "Junctions_com_consumo.csv")
 
 # acrescentar nós sem consumo e existentes na Junctions proveniente do qgisred
@@ -124,7 +123,7 @@ Junctions_qgisred<-read.csv("C:/Users/regin/Desktop/ShareFiles/MODELO/Junctions_
 
 diff<-setdiff(Junctions_qgisred$Id,DT$Id)
 diff<-as.data.frame(diff)
-write.csv(diff, "Junctions_sem_consumo.csv")
+write.csv(diff, "Junctions_sem_consumo_22.01.csv")
 
 # acrecentar (em excel) diff ao Epanet_Junctions e criar/limpar em excelficando:ID, Elev, Demand, Pattern, ZMC e codigos Idcontador
 dfepanet<-read_excel("C:/Users/regin/Desktop/ShareFiles/MODELO/Junctions_com&sem_consumo.xlsx", sheet=1)
@@ -132,7 +131,6 @@ dfepanet<-read_excel("C:/Users/regin/Desktop/ShareFiles/MODELO/Junctions_com&sem
 dfepanet<-dfepanet[!duplicated(dfepanet),]
 nrow(dfepanet)
 write.csv(dfepanet, "dfepanet.csv")
-
 
 ```
 ################

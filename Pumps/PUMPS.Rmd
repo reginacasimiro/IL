@@ -1,0 +1,105 @@
+---
+title: "PUMPS"
+author: "RC"
+date: "2024-02-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Hourly volume data 
+
+```{r}
+df<-do.call(rbind, list(X2023_01_Contagens_Agua, X2023_02_Contagens_Agua, X2023_03_Contagens_Agua, X2023_04_Contagens_Agua, X2023_05_Contagens_Agua,X2023_06_Contagens_Agua, X2023_07_Contagens_Agua, X2023_08_Contagens_Agua, X2023_09_Contagens_Agua, X2023_10_Contagens_Agua, X2023_11_Contagens_Agua, X2023_12_Contagens_Agua))
+write_excel_csv(df, "volume_bombeado_day_2023.csv")
+
+df$dia_hora<-as.POSIXct(df$`Data Hora`,format="%d/%m/%Y %H:%M")
+df <- df[order(df$dia_hora),]
+
+library(data.table)
+setDT(df)[, GRAV := df$`BP1 Grav Contador-Acc 1` - shift(df$`BP1 Grav Contador-Acc 1`)]
+setDT(df)[, PRESS := df$`BP1 Bomb Contador-Acc 1` - shift(df$`BP1 Bomb Contador-Acc 1`)]
+max(df$PRESS, na.rm = TRUE) #to find out day of major consumption
+min(df$PRESS, na.rm = TRUE) #to find out day of minor consumption
+df[which(df$PRESS==max(df$PRESS, na.rm = TRUE)),]
+
+```
+
+## peak flow data (no equal time period) dias de menor e maior consumo
+```{r}
+ago23<- read.csv("C:/Users/regin/Desktop/ShareFiles/Pump_Station_Capacity/02_03_Agosto_2023_caudal.csv", encoding = "UTF-8", sep = ";")
+ago22<- read.csv("C:/Users/regin/Desktop/ShareFiles/Pump_Station_Capacity/01a08_Agosto_2022_Volume.csv", encoding = "UTF-8", sep = ";")
+jan23<- read.csv("C:/Users/regin/Desktop/ShareFiles/Pump_Station_Capacity/02_03_Janeiro_2023_Volumes.csv", encoding = "UTF-8", sep = ";")
+
+
+# to round to the nearest  5 minutes
+library(lubridate)
+ago22$date<-as.POSIXct(ago22$Data.Hora,format="%d/%m/%Y %H:%M")
+ago22$minute5<-round_date(ago22$date, unit="5 minutes")
+jan23$date<-as.POSIXct(jan23$Data.Hora,format="%d/%m/%Y %H:%M")
+jan23$minute5<-round_date(jan23$date, unit="5 minutes")
+ago23$date<-as.POSIXct(ago23$Data.Hora,format="%d/%m/%Y %H:%M")
+ago23$minute5<-round_date(ago23$date, unit="5 minutes")
+```
+
+## to convert volume of 5 minutes interval into flow (m3/h)
+
+```{r}
+library(data.table)
+ago22<-as.data.table(ago22)
+jan23<-as.data.table(jan23)
+ago23<-as.data.table(ago23)
+
+setDT(ago22)[, PRESS := ago22$BP1.Bomb.Contador.Acc.1..m3. - shift(ago22$BP1.Bomb.Contador.Acc.1..m3.)]
+setDT(ago23)[, PRESS := ago23$BP1.Bomb.Contador.Acc.1..m3. - shift(ago23$BP1.Bomb.Contador.Acc.1..m3.)]
+setDT(jan23)[, PRESS := jan23$BP1.Bomb.Contador.Acc.1..m3. - shift(jan23$BP1.Bomb.Contador.Acc.1..m3.)]
+
+ago22$day<-format(as.POSIXct(ago22$Data.Hora,format="%d/%m/%Y %H:%M"),"%d")
+ago23$day<-format(as.POSIXct(ago23$Data.Hora,format="%d/%m/%Y %H:%M"),"%d")
+jan23$day<-format(as.POSIXct(jan23$Data.Hora,format="%d/%m/%Y %H:%M"),"%d")
+
+# ERRO há que considerar intervalo de tempo entre leituras
+ago22<-ago22[,FlowMinute5:=sum(PRESS, na.rm=TRUE)*12, by=c("minute5","day")] 
+ago23<-ago23[,FlowMinute5:=sum(PRESS, na.rm=TRUE)*12, by=c("minute5","day")]
+jan23<-jan23[,FlowMinute5:=sum(PRESS, na.rm=TRUE)*12, by=c("minute5","day")]
+
+j23<-jan23[,c("FlowMinute5","minute5","day")]
+j23<-j23[!duplicated(j23)]
+a23<-ago23[,c("FlowMinute5","minute5","day")]
+a23<-a23[!duplicated(a23)]
+a22<-ago22[,c("FlowMinute5","minute5","day")]
+a22<-a22[!duplicated(a22)]
+
+ag22<-a22$FlowMinute5
+ag22<- sort(ag22, decreasing = T)
+ag22 <- data.frame(x = 100/length(ag22) * 1:length(ag22), y = ag22)
+
+ag23<-a23$FlowMinute5
+ag23<- sort(ag23, decreasing = T)
+ag23 <- data.frame(x = 100/length(ag23) * 1:length(ag23), y = ag23)
+
+ja23<-j23$FlowMinute5
+ja23<- sort(ja23, decreasing = T)
+ja23 <- data.frame(x = 100/length(ja23) * 1:length(ja23), y = ja23)
+
+
+library(ggplot2)
+plot22_23<-ggplot() + 
+  geom_line(data = ag23, aes(x = x, y = y), color = "green") +
+  geom_line(data = ag22, aes(x = x, y = y), color = "orange") +
+  xlab('% tempo que determinado caudal é igualado ou excedido') +
+  ylab('caudal(m3/h)')
+
+
+
+
+```
+
+```{r}
+
+
+
+```
+
