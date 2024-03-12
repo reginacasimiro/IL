@@ -686,20 +686,27 @@ New Scenario
  V921_Up         	31.05600357 	0           	                	;			
  V922_Dw         	29.48473358 	0           	                	;			
  V922_Up         	29.48473358 	0           	                	;			
- V923_Dw         	20.01537323 	0           	                	;			
+ N6D             	20.01537323 	0           	                	;			
  V923_Up         	20.01537323 	0           	                	;			
  V924_Up         	45.4409523  	0           	                	;			
- V925_Up         	45.4409523  	0           	                	;			
+ N4D1            	45.4409523  	-40         	Q1              	;			
  V926_Dw         	33.98746872 	0.0038      	ZMC8            	;	409_VDL 410_VDL 411_VDL		
  V926_Up         	33.98746872 	0           	                	;			
  V927_Dw         	45.4409523  	0           	                	;			
  V927_Up         	45.4409523  	0           	                	;			
+ N1S             	45.4409523  	100         	                	;
+ N4D2            	45.4409523  	-40         	Q2              	;
+ N3S1            	20          	40          	Q1              	;
+ N3S2            	20          	40          	Q2              	;
 
 [RESERVOIRS]
 ;ID              	Head        	Pattern         
  Gravitica       	48          	                	;
  Litoral         	90          	                	;
- Pressurizada    	74          	                	;
+ R1SL            	70          	                	;
+ R2DH            	70          	                	;
+ R1SH            	73          	                	;
+ R2DL            	65          	                	;
 
 [TANKS]
 ;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve        	Overflow
@@ -1046,7 +1053,7 @@ New Scenario
  P535_5_ND4      	J313            	J317            	26.749      	200         	120         	0           	OPEN  	;
  P535_5_ND6_V1   	J317            	V920_Up         	65.981      	200         	120         	0           	OPEN  	;
  P535_5_ND6_V2   	V920_Dw         	V923_Up         	2.781       	200         	120         	0           	OPEN  	;
- P535_5_ND6_V4   	V923_Dw         	J393            	363.416     	200         	120         	0           	OPEN  	;
+ P535_5_ND6_V4   	N6D             	J393            	363.416     	200         	120         	0           	OPEN  	;
  P535_5_ND8      	J393            	J399            	137.347     	200         	120         	0           	OPEN  	;
  P536            	J385            	J393            	45.179      	125         	120         	0           	OPEN  	;
  P540_2          	J417            	J429            	56.001      	110         	120         	0           	OPEN  	;
@@ -1158,7 +1165,7 @@ New Scenario
  P640_ND2        	J152            	J149            	0.584       	110         	120         	0           	OPEN  	;
  P641            	J159            	J152            	7.684       	110         	120         	0           	OPEN  	;
  P642            	J168            	J239            	111.529     	60          	120         	0           	OPEN  	;
- P646_ND1        	V925_Up         	J247            	3.089       	250         	120         	0           	OPEN  	;
+ P646_ND1        	N4D1            	J247            	3.089       	250         	120         	0           	OPEN  	;
  P646_ND2_V1     	J247            	V927_Up         	1.031       	250         	120         	0           	OPEN  	;
  P646_ND2_V2     	V927_Dw         	J259            	28.456      	250         	120         	0           	OPEN  	;
  P647            	J267            	J279            	14.201      	90          	120         	0           	OPEN  	;
@@ -1423,10 +1430,18 @@ New Scenario
  P921_2_ND2      	J594            	J627            	138.82      	110         	120         	0           	OPEN  	;
  P99_9_ND1       	J593            	J639            	56.851      	90          	120         	0           	OPEN  	;
  P99_9_ND2       	J639            	J710            	87.094      	90          	120         	0           	OPEN  	;
+ P1SL            	R1SL            	N1S             	1           	1000        	100         	0           	Closed	;
+ P6DH            	N6D             	R2DH            	1           	1000        	150         	0           	Closed	;
+ P1SH            	R1SH            	N1S             	1           	1000        	100         	0           	Open  	;
+ P6DL            	N6D             	R2DL            	1           	1000        	150         	0           	Open  	;
+ 10              	J247            	N4D2            	3.089       	250         	120         	0           	Open  	;
+ 11              	N3S1            	N1S             	1           	1000        	100         	0           	Open  	;
+ 12              	N3S2            	N1S             	1           	1000        	100         	0           	Open  	;
+ 6               	R2DH            	V923_Up         	1           	1000        	150         	0           	Closed	;
+ 7               	V923_Up         	R2DL            	1           	1000        	150         	0           	Closed	;
 
 [PUMPS]
 ;ID              	Node1           	Node2           	Parameters
- 2               	Pressurizada    	V925_Up         	POWER 	;
 
 [VALVES]
 ;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
@@ -1434,7 +1449,6 @@ New Scenario
  V920            	V920_Up         	V920_Dw         	200         	TCV 	0           	0           	;
  V921            	V921_Up         	V921_Dw         	200         	TCV 	0           	0           	;
  V922            	V922_Up         	V922_Dw         	200         	TCV 	0           	0           	;
- V923            	V923_Up         	V923_Dw         	200         	PRV 	0           	0           	;
  V924            	V924_Up         	Gravitica       	200         	TCV 	0           	0           	;
  V926            	V926_Up         	V926_Dw         	200         	TCV 	0           	0           	;
  V927            	V927_Up         	V927_Dw         	200         	TCV 	0           	0           	;
@@ -1450,7 +1464,6 @@ New Scenario
  V920            	Closed
  V921            	Closed
  V922            	Closed
- V923            	Open
  V924            	Open
  V926            	Closed
  V927            	Open
@@ -1458,27 +1471,68 @@ New Scenario
 [PATTERNS]
 ;ID              	Multipliers
 ;ID                             	Multipliers
- ZMC7            	29.0        	31.0        	27.0        	27.0        	27.0        	25.0        
- ZMC7            	31.0        	29.0        	20.0        	14.0        	13.0        	14.0        
- ZMC7            	12.0        	9.0         	9.0         	14.0        	10.0        	9.0         
- ZMC7            	8.0         	10.0        	12.0        	16.0        	22.0        	28.0        
+ ZMC7            	0           
 ;ID                             	Multipliers
- ZMC8            	259.0       	278.0       	245.0       	244.0       	239.0       	225.0       
- ZMC8            	275.0       	265.0       	176.0       	125.0       	116.0       	127.0       
- ZMC8            	112.0       	78.0        	82.0        	128.0       	89.0        	77.0        
- ZMC8            	73.0        	94.0        	107.0       	145.0       	197.0       	253.0       
+ ZMC8            	0           
 ;ID                             	Multipliers
  ZMC9            	28.0        	31.0        	49.0        	42.0        	38.0        	38.0        
  ZMC9            	33.0        	39.0        	29.0        	26.0        	24.0        	24.0        
  ZMC9            	21.0        	19.0        	21.0        	19.0        	18.0        	18.0        
  ZMC9            	20.0        	20.0        	21.0        	23.0        	23.0        	31.0        
+;Pump 1 - Increment flow for system curves
+ Q1              	0           	1           	2.5         	4           	7           	7.5         
+ Q1              	0           	1           	2.5         	4           	7           	7.5         
+ Q1              	0           	1           	2.5         	4           	7           	7.5         
+ Q1              	0           	1           	2.5         	4           	7           	7.5         
+;Pump 2 - Increment flow for system curves
+ Q2              	0           	0           	0           	0           	0           	0           
+ Q2              	0           	0           	0           	0           	0           	0           
+ Q2              	0           	1           	2.5         	4           	7           	7.5         
+ Q2              	0           	1           	2.5         	4           	7           	7.5         
 
 [CURVES]
 ;ID              	X-Value     	Y-Value
 
 [CONTROLS]
+; Control Pipe P1SH for TPS
+LINK P1SH OPEN AT TIME 0:00
+LINK P1SH CLOSED AT TIME 6:00
+LINK P1SH OPEN AT TIME 12:00
+LINK P1SH CLOSED AT TIME 18:00
+
+; Control Pipe P6DL for TPS
+LINK P6DL OPEN AT TIME 0:00
+LINK P6DL CLOSED AT TIME 6:00
+LINK P6DL OPEN AT TIME 12:00
+LINK P6DL CLOSED AT TIME 18:00
+
+; Control Pipe P1SL for TPS
+LINK P1SL CLOSED AT TIME 0:00
+LINK P1SL OPEN AT TIME 6:00
+LINK P1SL CLOSED AT TIME 12:00
+LINK P1SL OPEN AT TIME 18:00
+
+; Control Pipe P6DH for TPS
+LINK P6DH CLOSED AT TIME 0:00
+LINK P6DH OPEN AT TIME 6:00
+LINK P6DH CLOSED AT TIME 12:00
+LINK P6DH OPEN AT TIME 18:00
+
+
+
+
+
 
 [RULES]
+
+
+
+
+
+
+
+
+
 
 [ENERGY]
  Global Efficiency  	75
@@ -1511,7 +1565,7 @@ New Scenario
 ;Tank            	Model
 
 [TIMES]
- Duration           	9:00 
+ Duration           	24:00 
  Hydraulic Timestep 	0:15 
  Quality Timestep   	0:05 
  Pattern Timestep   	1:00 
@@ -1540,7 +1594,7 @@ New Scenario
  Pattern            	1
  Demand Multiplier  	1.0
  Emitter Exponent   	0.5
- Quality            	Trace Pressurizada
+ Quality            	Trace R1SL
  Diffusivity        	1
  Tolerance          	0.01
 
@@ -2229,17 +2283,24 @@ V921_Dw         	6077.554          	-290409.802
 V921_Up         	6077.228          	-290410.748       
 V922_Dw         	7735.360          	-290231.492       
 V922_Up         	7736.313          	-290231.796       
-V923_Dw         	6284.531          	-290930.023       
+N6D             	6284.531          	-290930.023       
 V923_Up         	6283.647          	-290929.556       
 V924_Up         	6116.600          	-289472.191       
-V925_Up         	6117.221          	-289472.234       
+N4D1            	6117.221          	-289472.234       
 V926_Dw         	6243.511          	-290391.388       
 V926_Up         	6243.387          	-290392.380       
 V927_Dw         	6118.374          	-289475.795       
 V927_Up         	6117.380          	-289475.692       
+N1S             	6118.221          	-289472.179       
+N4D2            	6117.511          	-289472.271       
+N3S1            	6118.084          	-289472.444       
+N3S2            	6118.311          	-289472.455       
 Gravitica       	6115.601          	-289472.230       
 Litoral         	7753.063          	-290237.741       
-Pressurizada    	6118.639          	-289472.106       
+R1SL            	6118.639          	-289472.106       
+R2DH            	6284.553          	-290929.232       
+R1SH            	6117.966          	-289471.556       
+R2DL            	6283.813          	-290930.037       
 
 [VERTICES]
 ;Link            	X-Coord           	Y-Coord
@@ -5570,6 +5631,7 @@ P99_9_ND2       	6983.538          	-290582.650
 P99_9_ND2       	6990.282          	-290580.100       
 P99_9_ND2       	7003.587          	-290578.278       
 P99_9_ND2       	7006.329          	-290576.679       
+P6DH            	6284.587          	-290929.332       
 
 [LABELS]
 ;X-Coord             Y-Coord             Label & Anchor Node
