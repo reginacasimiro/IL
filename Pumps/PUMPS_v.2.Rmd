@@ -37,22 +37,43 @@ ago5<- read_excel("C:/Users/regin/Desktop/ShareFiles/Pump_Station_Capacity/B_Bom
 
 ```
 
-## Duration plot
+## Duration Diagram
 
 ```{r}
-ago5Flow<-ago5$`BP1 Bomb Contador-Caudal actua (m3/h)`
-ago5Flow<- sort(ago5Flow, decreasing = T)
-ago5plot <- data.frame(x = 100/length(ago5Flow) * 1:length(ago5Flow), y = ago5Flow)
+library(dplyr)
+library(lubridate)
+ago5$date<-as.POSIXct(ago5$`Data-Hora`,format="%Y-%m-%d %H:%M:%S")
+ago5$minute10<-round_date(ago5$date, unit="10 minutes")
 
-jan2Flow<-jan2$`BP1 Bomb Contador-Caudal actua (m3/h)`
-jan2Flow<- sort(jan2Flow, decreasing = T)
-jan2plot <- data.frame(x = 100/length(jan2Flow) * 1:length(jan2Flow), y = jan2Flow)
+# verificar se o intervalo entre leituras é superior a 10 minutos
+ago5<- ago5[order(ago5$date),]
+check<-ago5 %>% 
+  mutate(diff = date - lag(date),
+         diff_minutes = as.numeric(diff, units = "mins"),
+         time_int = format(.POSIXct(diff_minutes*60, "UTC"), "%H:%M:%S")) %>% 
+  select(date, diff_minutes, time_int) %>% 
+  # Filter the data for a range of minutes
+  filter(diff_minutes > 10 )
+
+# average flow between readings
+library(data.table)
+ago5<-as.data.table(ago5)
+ago5<-ago5[,Flow10:=mean(`BP1 Bomb Contador-Caudal actua (m3/h)`, na.rm=TRUE), by="minute10"] 
+
+ago5plot<-ago5[, c("minute10","Flow10")]
+ago5plot<-ago5plot[!duplicated(ago5plot)]
+
+plot5<-ago5plot$Flow10
+plot5<- sort(plot5, decreasing = T)
+plot5 <- data.frame(x = 100/length(plot5) * 1:length(plot5), y = plot5)
+
+# repetir para 2 jan
 
 
 library(ggplot2)
 plot_ago_jan<-ggplot() + 
-  geom_line(data = jan2plot, aes(x = x, y = y), color = "green") +
-  geom_line(data = ago5plot, aes(x = x, y = y), color = "orange") +
+geom_line(data = plot2, aes(x = x, y = y), color = "green") +
+ geom_line(data = plot5, aes(x = x, y = y), color = "orange") +
   xlab('% tempo que determinado caudal é igualado ou excedido') +
   ylab('caudal (m3/h)')
 
